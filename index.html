@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="website">
+    <div class="background-gradient">
+        <div  class="background-gradient-overlay"></div>
+    </div>
 
+    <div id="website">
+        <!-- Navbar -->
+        <div id="navbar">
+            <ul>
+                <li><a href="#"  class="nav-link" data-section="section-Accueil">Accueil</a></li>
+                <li><a href="#"  class="nav-link" data-section="section-Profil">Profil</a></li>
+                <li><a href="#"  class="nav-link" data-section="section-Projets">Projets</a></li>
+                <li><a href="#"  class="nav-link" data-section="section-Epreuve">Épreuve Portfolio</a></li>
+                <li><a href="#"  class="nav-link" data-section="section-Contact">Contact</a></li>
+            </ul>
+        </div>
+        <button id="toggle-navbar">☰</button>
+
+        <div class="content">
+            <div id="section-Accueil" class="section section-Accueil active">
+                <h2>Section 1</h2>
+                <p>Contenu de la section 1</p>
+            </div>
+            <div id="section-Profil" class="section section-Profil">
+                <h2>Section 2</h2>
+                <p>Contenu de la section 2</p>
+            </div>
+            <div id="section-Projets" class="section section-Projets">
+                <h2>Section 3</h2>
+                <p>Contenu de la section 3</p>
+            </div>
+            <div id="section-Epreuve" class="section section-Epreuve">
+                <h2>Section 4</h2>
+                <p>Contenu de la section 4</p>
+            </div>
+            
+            <div id="section-Contact" class="section section-Contact">
+                <h2>Me Contacter</h2>
+                
+                <form action="https://formspree.io/f/xgvenagv" method="POST">
+                    
+                    <label>Email:<input type="email" name="email"></label>
+                    <label>Message:<textarea name="message"></textarea></label>
+            
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            
+            <canvas id="animationCanvas"></canvas>
         </div>
         
         <div id="magic-mouse-container"></div>

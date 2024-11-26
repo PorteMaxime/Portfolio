@@ -1,5 +1,7 @@
 const container = document.getElementById("magic-mouse-container"),
-      persistentGlow = document.getElementById("persistent-glow");
+      persistentGlow = document.getElementById("persistent-glow"),
+      navbar = document.getElementById("navbar"),
+      toggleNavbar = document.getElementById("toggle-navbar");
 
 const config = {
     glowDuration: 75,
@@ -49,3 +51,61 @@ window.onmousemove = e => {
     createGlow(lastPosition, currentPosition);
     lastPosition = currentPosition;
 };
+
+// Navbar toggle logic
+let navbarVisible = false;
+toggleNavbar.addEventListener("click", () => {
+    if (navbarVisible) {
+        navbar.style.top = "-120px"; // Hide navbar
+    } else {
+        navbar.style.top = "0"; // Show navbar
+    }
+    navbarVisible = !navbarVisible;
+});
+
+// Fonction pour fermer la navbar si on clique en dehors
+document.addEventListener("click", (event) => {
+    if (navbarVisible && !navbar.contains(event.target) && !toggleNavbar.contains(event.target)) {
+        navbar.style.top = "-120px"; // Cache la navbar
+        navbarVisible = false;
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section');
+
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetSectionId = link.getAttribute('data-section');
+            const targetSection = document.getElementById(targetSectionId);
+
+            // Ajoute la classe fade-out à la section active
+            const activeSection = document.querySelector('.section.active');
+            if (activeSection) {
+                // Ajoute fade-out à la section active
+                activeSection.classList.add('fade-out');
+
+                // Attends la fin de l'animation fade-out avant de changer de section
+                activeSection.addEventListener('animationend', () => {
+                    activeSection.classList.remove('active', 'fade-out');
+
+                    // Affiche la nouvelle section avec l'animation fade-in
+                    targetSection.classList.add('active', 'fade-in');
+
+                    // Supprime la classe fade-in après l'animation
+                    targetSection.addEventListener('animationend', () => {
+                        targetSection.classList.remove('fade-in');
+                    }, { once: true });
+                }, { once: true });
+            } else {
+                // Si aucune section active, active directement la nouvelle
+                targetSection.classList.add('active', 'fade-in');
+                targetSection.addEventListener('animationend', () => {
+                    targetSection.classList.remove('fade-in');
+                }, { once: true });
+            }
+        });
+    });
+});
