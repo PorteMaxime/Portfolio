@@ -1,0 +1,38 @@
+:root {
+    --glow-rgb: 245 245 245;
+}
+
+body {
+    background-color: black;
+    cursor: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+#website {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#magic-mouse-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.glow-point {
+    position: absolute;
+    box-shadow: 0 0 1.2rem 0.4rem rgb(var(--glow-rgb));
+    pointer-events: none;
+}
+
+#persistent-glow {
+    position: absolute;
+    box-shadow: 0 0 1.2rem 0.8rem rgb(var(--glow-rgb));
+    pointer-events: none;
+}
