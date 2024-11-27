@@ -43,6 +43,12 @@ body {
     z-index: 1; /* Make sure overlay is above the gradient */
 }
 
+.center-class {
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centre le texte */
+}
+
 /* NAVBAR */
 #navbar {
     position: fixed;
@@ -141,29 +147,19 @@ body {
 .section {
     display: none; /* Par défaut, les sections sont cachées */
     width: 100%;
-    background-color: rgba(255, 106, 106, 0.182);
+    background-color: rgba(165, 84, 84, 0.11);
     height: 100vh; /* Hauteur par défaut */
     margin: 0;
     padding: 20px;
 }
 
-.section-Accueil {
-    background-color: rgba(135, 255, 108, 0.137);
-    height: 150vh;
-}
-
-.section-Profil {
-    background-color: rgba(44, 79, 255, 0.196);
-    height: 150vh;
-}
-
 .section-Projets {
-    background-color: rgba(244, 41, 255, 0.164);
+    background-color: rgba(171, 87, 175, 0.11);
     height: 150vh;
 }
 
 .section-Epreuve {
-    background-color: rgba(255, 224, 49, 0.223);
+    background-color: rgba(202, 185, 91, 0.11);
     height: 150vh;
 }
 
@@ -208,46 +204,95 @@ body {
     animation: fadeOut 0.3s forwards;
 }
 
+/* SECTION ACCUEIL */
 
-/* Style pour le formulaire de contact */
-
-.section-Contact {
-    background-color: rgba(57, 202, 255, 0.183);
+.section-Accueil {
+    background-color: rgba(148, 221, 132, 0.11);
     height: 150vh;
 }
 
-#section-Contact {
-    display: flex; /* Active Flexbox */
+.title-div h1 {
+    font-size: 4rem; /* Grande taille pour le titre principal */
+    font-weight: bold; /* Met en gras */
+    margin: 0; /* Supprime les marges */
+    color: white; /* Texte en blanc */
+}
+
+.title-div h2 {
+    font-size: 2.5rem; /* Taille du nom */
+    margin: 10px 0; /* Espacement au-dessus et en-dessous */
+    color: white; /* Texte en blanc */
+}
+
+.title-div p {
+    font-size: 1.5rem; /* Taille pour le texte descriptif */
+    margin: 10px 0; /* Espacement au-dessus et en-dessous */
+    color: white; /* Texte en blanc */
+    font-style: italic; /* Met en italique */
+}
+
+
+/* SECTION PROFIL */
+
+.section-Profil {
+    background-color: rgba(80, 96, 177, 0.11);
+    height: 150vh;
+    height: 100vh; /* Hauteur de la section */
+    padding: 20px;
+}
+
+
+.profile-photo {
+    width: 150px; /* Taille de l'image */
+    height: 150px; /* Taille de l'image */
+    border-radius: 50%; /* Rend l'image ronde */
+    object-fit: cover; /* Assure un bon ajustement */
+    margin-bottom: 20px; /* Espacement sous la photo */
+    border: 3px solid white; /* Ajoute une bordure blanche */
+}
+
+.profile-container h2 {
+    font-size: 2rem; /* Taille du titre */
+    margin-bottom: 1rem; /* Espacement sous le titre */
+    color: white;
+}
+
+.profile-container p {
+    font-size: 1rem; /* Taille des paragraphes */
+    margin-bottom: 1rem; /* Espacement entre les paragraphes */
+    color: white;
+    line-height: 1.5; /* Améliore la lisibilité */
+}
+
+/* SECTION CONTACT */
+
+.section-Contact {
+    background-color: rgba(84, 151, 175, 0.103);
+    height: 150vh;
     flex-direction: column; /* Organise les éléments en colonne */
     justify-content: center; /* Centre verticalement */
-    align-items: center; /* Centre horizontalement */
     height: 100vh; /* La section prend toute la hauteur de la fenêtre */
-    text-align: center; /* Centre également le texte */
     padding: 20px; /* Un peu de marge intérieure */
 }
 
 #section-Contact h2 {
     font-size: 2.5rem; /* Agrandir la taille du texte */
-    text-align: center; /* Centrer le texte */
     color: white; /* Couleur du texte */
     margin-bottom: 1rem; /* Un peu d'espace sous le titre */
 }
 
 #section-Contact p {
     font-size: 1rem; /* Taille plus petite pour la description */
-    text-align: center; /* Centrer le texte */
     color: white; /* Couleur du texte */
     margin-bottom: 2rem; /* Un peu d'espace sous la description */
 }
 
 
 #section-Contact form {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 350px; /* Agrandir la largeur du formulaire */
     margin: 0 auto; /* Centrer le formulaire dans la section */
-    text-align: center; /* Centrer le texte du formulaire */
 }
 
 #section-Contact label {
