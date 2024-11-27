@@ -1,5 +1,6 @@
 :root {
     --glow-rgb: 245 245 245;
+    --persistent-glow-size: 0.8rem;
     --near-black-rgb: 10 10 10;
     --dark_grey-rgb: 40 40 40;
 }
@@ -135,9 +136,15 @@ body {
     pointer-events: none;
 }
 
-#persistent-glow {
+.glow-point-down {
     position: absolute;
     box-shadow: 0 0 1.2rem 0.8rem rgb(var(--glow-rgb));
+    pointer-events: none;
+}
+
+#persistent-glow {
+    position: absolute;
+    box-shadow: 0 0 1.2rem var(--persistent-glow-size) rgb(var(--glow-rgb));
     pointer-events: none;
     z-index: 100; /* Above the navbar */
 }

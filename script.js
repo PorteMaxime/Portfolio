@@ -1,18 +1,39 @@
+var primaryMouseButtonDown = false;
+
+function setPrimaryButtonState(e) {
+  var flags = e.buttons !== undefined ? e.buttons : e.which;
+  primaryMouseButtonDown = (flags & 1) === 1;
+  
+    if (primaryMouseButtonDown == false) {
+        document.documentElement.style.setProperty('--persistent-glow-size', '0.8rem');
+    } else {
+        document.documentElement.style.setProperty('--persistent-glow-size', '1.2rem');
+    }
+}
+
+document.addEventListener("mousedown", setPrimaryButtonState);
+document.addEventListener("mousemove", setPrimaryButtonState);
+document.addEventListener("mouseup", setPrimaryButtonState);
+
 const container = document.getElementById("magic-mouse-container"),
-      persistentGlow = document.getElementById("persistent-glow"),
-      navbar = document.getElementById("navbar"),
-      toggleNavbar = document.getElementById("toggle-navbar");
+    persistentGlow = document.getElementById("persistent-glow"),
+    navbar = document.getElementById("navbar"),
+    toggleNavbar = document.getElementById("toggle-navbar");
 
 const config = {
     glowDuration: 75,
-    maximumGlowPointSpacing: 10
+    maximumGlowPointSpacing: 5
 };
 
 const px = value => `${value}px`;
 
 const createGlowPoint = position => {
     const glow = document.createElement("div");
-    glow.className = "glow-point";
+    if (primaryMouseButtonDown == false) {
+        glow.className = "glow-point";
+    } else {
+        glow.className = "glow-point-down";
+    }
     glow.style.left = px(position.x);
     glow.style.top = px(position.y);
     container.appendChild(glow);
