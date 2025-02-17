@@ -7,83 +7,196 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-gradient">
-        <div  class="background-gradient-overlay"></div>
+
+  <!-- Curseur personalisé -->
+  <div id="magic-mouse-container"></div>
+  <div id="persistent-glow"></div>
+  <script src="script.js" defer></script>
+  <!-- Fin Curseur personalisé-->
+
+  <!-- Site -->
+  <div id="website">
+
+    <!-- Fond site -->
+    <div id="images-pattern">
+    </div>
+    <div class="border-fog">
+    </div>
+    <!-- Fin Fond site -->
+
+    <!-- Navbar -->
+    <div id="navbar-container">
+      <div id="navbar">
+        <div id="stripe-pattern">
+          <ul>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Accueil">Accueil</a></li>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Profil">Profil</a></li>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Projets">Projets</a></li>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Epreuve">Épreuve Portfolio</a></li>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div id="website">
-        <!-- Navbar -->
-        <div id="navbar">
-            <ul>
-                <li><a href="#"  class="nav-link" data-section="section-Accueil">Accueil</a></li>
-                <li><a href="#"  class="nav-link" data-section="section-Profil">Profil</a></li>
-                <li><a href="#"  class="nav-link" data-section="section-Projets">Projets</a></li>
-                <li><a href="#"  class="nav-link" data-section="section-Epreuve">Épreuve Portfolio</a></li>
-                <li><a href="#"  class="nav-link" data-section="section-Contact">Contact</a></li>
-            </ul>
+    <button id="toggle-navbar" class="button-style">☰</button>
+    <!-- Fin Navbar -->
+
+    
+    <!-- Pages / Sections du site -->
+    <div>
+
+      <!-- Accueil -->
+      <div id="section-Accueil" class="section section-Accueil active">
+          <div class="center-class">
+            <div class="title-div">
+                <h1>Portfolio</h1>
+                <h2>Maxime Porte</h2>
+                <p>BTS SIO - OPTION SLAM</p>
+            </div>
         </div>
-        <button id="toggle-navbar">☰</button>
+      </div>
+      <!-- Fin Accueil -->
 
-        <div class="content">
+      <!-- Profil -->
+      <div id="section-Profil" class="section section-Profil">
+          <div class="center-class">
+              <div class="profile-container">
+                  <h1 class="titre-section">À propos de moi</h1>
+                  <img src="profil_image.jpg" alt="Photo" class="profile-photo">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Curabitur vel sem at arcu feugiat vestibulum. Proin accumsan metus vel risus malesuada, id consequat sapien sagittis.</p>
+                  <h1 class="titre-section">Mon parcours</h1>
+                  <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
+                  <h1 class="titre-section">Mes missions</h1>
+            </div>
+          </div>
+      </div>
+      <!-- Fin Profil -->
 
+      <!-- Projets -->
+      <div id="section-Projets" class="section section-Projets">
+        <div class="center-class">
+          <h1 class="titre-section">Mes projets</h1>
 
-            <div id="section-Accueil" class="section section-Accueil active">
-                <div class="center-class">
-                    <div class="title-div">
-                        <h1>Portfolio</h1>
-                        <h2>Maxime Porte</h2>
-                        <p>BTS SIO - OPTION SLAM</p>
+          <div id="filter-buttons">
+              <button class="filter-btn" data-category="catégorie 1">Catégorie 1</button>
+              <button class="filter-btn" data-category="catégorie 231">Catégorie 231</button>
+              <button class="filter-btn" data-category="catégorie 22">Catégorie 22</button>
+              <button class="filter-btn" data-category="catégorie 2123123">Catégorie 2123123</button>
+              <button class="filter-btn" data-category="catégorie 23111">Catégorie 23111</button>
+          </div>
+
+          <!-- Cartes -->
+          <div id="cards">
+
+            <div class="card" data-id="popup1">
+              <div class="card-content">
+                <img src="profil_image.jpg" alt="Photo" class="card-image">
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <div class="card-info-text">
+                      <h1 class="titre-carte">long titre a a a</h1>
+                      <div class="card-categories">
+                        <h2 class="catégorie-carte">catégorie 1</h2>
+                        <h2 class="catégorie-carte">catégorie 231</h2>
+                        <h2 class="catégorie-carte">catégorie 22</h2>
+                        <h2 class="catégorie-carte">catégorie 2123123</h2>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="popup1" class="popup">
+              <div class="popup-content">
+                  <button class="close-btn button-style">&times;</button>
+                  <h1 id="popup1-title"></h1>
+                  <p id="popup1-text">Description du projet 1.</p>
+              </div>
+            </div>
+
+            <div class="card" data-id="popup2">
+              <div class="card-content">
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <div class="card-info-text">
+                      <h1 class="titre-carte">titre.</h1>
+                      <div class="card-categories">
+                        <h2 class="catégorie-carte">catégorie 231</h2>
+                        <h2 class="catégorie-carte">catégorie 23111</h2>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-            
-
-            <div id="section-Profil" class="section section-Profil">
-                <div class="center-class">
-                    <div class="profile-container">
-                        <img src="profil_image.jpg" alt="Photo" class="profile-photo">
-                        <h2>À propos de moi</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Curabitur vel sem at arcu feugiat vestibulum. Proin accumsan metus vel risus malesuada, id consequat sapien sagittis.</p>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <div id="section-Projets" class="section section-Projets">
-                <div class="center-class">
-                    <h2>Section Projets</h2>
-                    <p>en cours</p>
-                </div>
+            <div id="popup2" class="popup">
+              <div class="popup-content">
+                  <button class="close-btn button-style">&times;</button>
+                  <h1 id="popup2-title"></h1>
+                  <p id="popup2-text">Description du projet 2.</p>
+              </div>
             </div>
-            <div id="section-Epreuve" class="section section-Epreuve">
-                <div class="center-class">
-                    <h2>Section présentation de l'épreuve</h2>
-                    <p>en cours</p>
-                </div>
-            </div>
-            
 
-            <div id="section-Contact" class="section section-Contact">
-                <div class="center-class">
-                    <h2>Me Contacter</h2>
-                    
-                    <form action="https://formspree.io/f/xgvenagv" method="POST">
-                        
-                        <label>Email:<input type="email" name="email"></label>
-                        <label>Message:<textarea name="message"></textarea></label>
-                
-                        <button type="submit">Envoyer</button>
-                    </form>
-                </div>
-            </div>
-            
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+          <!-- Fin Cartes -->
 
-            <canvas id="animationCanvas"></canvas>
         </div>
-        
-        <div id="magic-mouse-container"></div>
-        <div id="persistent-glow"></div>
-        <script src="script.js" defer></script>
+      </div>
+      <!-- Fin Projets -->
+
+      <!-- Épreuve -->
+      <div id="section-Epreuve" class="section section-Epreuve">
+          <div class="center-class">
+              <h1 class="titre-section">Épreuve e5 - Portfolio</h1>
+              <h1 class="titre-section">Le tableau des compétences</h1>
+              <img src="profil_image.jpg" alt="Photo" class="table-picture">
+              <h1 class="titre-section">Mes projets</h1>
+              <p>Mes projets sont visibles en allant sur la section "projets" ou en cliquant sur <a href="#" class="button-style" data-section="section-Projets">Ce lien</a></p>
+              
+          </div>
+      </div>
+      <!-- Fin Épreuve -->
+
+      <!-- Contact -->
+      <div id="section-Contact" class="section section-Contact">
+          <div class="center-class">
+            <p>+ ajouter cv + linkedin + crédits</p>
+              <h1 class="titre-section">Me Contacter</h1>
+              
+              <form action="https://formspree.io/f/xgvenagv" method="POST">
+                  
+                  <label>Email:<input type="email" name="email"></label>
+                  <label>Message:<textarea name="message"></textarea></label>
+          
+                  <button type="submit">Envoyer</button>
+              </form>
+          </div>
+      </div>
+      <!-- Fin Contact -->
+
     </div>
+    <!-- Fin Pages / Sections du site -->
+
+  </div>
+  <!-- Fin Site -->
+
 </body>
 </html>
