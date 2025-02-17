@@ -18,8 +18,7 @@ for(const text of document.querySelectorAll(".bouncing-letters")) {
         text.appendChild(span);
     });
 }
-  
-  
+
 var persistentGlowRGBUp = '220 220 220';
 var persistentGlowRGBDown = '100 100 100';
 
