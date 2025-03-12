@@ -66,17 +66,53 @@
           <div class="content-frame position-change-frame">
             <h1 class="titre-section">À propos de moi</h1>
             <img src="profil_image.jpg" alt="Photo" class="profile-photo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Curabitur vel sem at arcu feugiat vestibulum. Proin accumsan metus vel risus malesuada, id consequat sapien sagittis.</p>
+            <p>actuellement en 2ème année de bts sio (option slam) à vénissieux</p>
+            <p>mon cv et me contacter</p>
+            <p>projet professionnel</p>
           </div>
 
           <div class="content-frame position-change-frame">
             <h1 class="titre-section">Mon parcours</h1>
+            <h3>Brevet</h3>
+            <p>
+              2016 / 2020 - Chazay d’Azergues<br>
+              Diplôme du brevet des collèges obtenu en 2020, avec la mention bien
+            </p>
+            <h3>Baccalauréat STI2D option SIN</h3>
+            <p>
+              2020 / 2023 - Villefranche-sur-Saône<br>
+              Baccalauréat STI2D obtenu en 2023, avec la mention assez bien
+            </p>
+            <h3>BTS SIO option SLAM en alternance</h3>
+            <p>
+              2023 / 2025 - Vénissieux<br>
+              Bts non terminé, fin en 2025
+            </p>
+            <h3>La suite au prochain épisode...</h3>
           </div>
 
           <div class="content-frame position-change-frame">
             <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
-            <h1 class="titre-section">Apprenti développeur web : mes missions</h1>
+            <p>Avant de commencer à parler de moi, je vous propose de présenter en premier lieu ma filière dont je suis affecté
+
+              Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. Pour par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
+            </p>
+            <p> Je vous présente à présent la formation que j'ai suivie et dans laquelle j'ai évolué pendant 2 ans.
+
+              Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. Et ainsi par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
+            </p>
+            
+            <p>
+              L'acronyme SLAM signifie « Solutions Logicielles et Applications Métier ». Voici quelques indications sur cette seconde option du BTS SIO, ainsi des précisions sur cette formation et ses débouchés. L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs. Grâce à des cours spécifiques, les diplômés seront capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise. Ils pourront également diriger l’intégration, la sécurisation et la configuration des serveurs, mais aussi des postes clients et des équipements d’interconnexion.
+            </p>
+            <h1 class="titre-section">Apprenti développeur web au SGAMI SUD-EST</h1>
+            <p>
+              étant en alternance, j'ai la chance de travailler à mi-temps. Dans un monde de désolation, où seule les acronymes survivent, j'ai nommé le SGAMI : le Secrétariat Général pour l'Administration du Ministère de l'Intérieur
+            </p>
+            <p>Voici un organigrame pour me situer :</p>
+            <img>(insérer organigrame ici)
+            <p>Ma place se trouve au sein du BIFN (le bureau innovation et fabrique numérique). Parmis les développeurs sauvages, j'ai eu l'occasion de découvrir le monde impitoyable du travail</p>
+            <p></p>
           </div>
           
         </div>
@@ -85,15 +121,26 @@
 
       <!-- Projets -->
       <div id="section-Projets" class="section section-Projets">
-        <h1 class="titre-section">Mes projets</h1>
+        
+        <div class="content-frame position-change-frame">
+          <h1 class="titre-section">Mes projets</h1>
+          <p>Les projets que j'ai réalisé jusqu'à maintenant en formation, en travaillant et mes projets personnels sont présents ici.</p>
+          
+          <br>
 
-        <div id="filter-buttons">
-            <button class="filter-btn" data-category="catégorie 1">Catégorie 1</button>
-            <button class="filter-btn" data-category="catégorie 231">Catégorie 231</button>
-            <button class="filter-btn" data-category="catégorie 22">Catégorie 22</button>
-            <button class="filter-btn" data-category="catégorie 2123123">Catégorie 2123123</button>
-            <button class="filter-btn" data-category="catégorie 23111">Catégorie 23111</button>
+          <p>Il est possible de les trier grâce aux filtres présents ci-dessous.</p>
+ 
+          <br>
+         
+          <div id="filter-buttons">
+            <button class="filter-btn" data-category="catégorie 1">Projets personnels</button>
+            <button class="filter-btn" data-category="catégorie 231">Projets en formation</button>
+            <button class="filter-btn" data-category="catégorie 22">Projets au travail</button>
+            <button class="filter-btn" data-category="catégorie 2123123">(langages de programmation)</button>
+            <button class="filter-btn" data-category="catégorie 23111">(applications utilisées)</button>
+          </div>
         </div>
+
 
         <!-- Cartes -->
         <div id="cards">
@@ -192,21 +239,42 @@
       <!-- Contact -->
       <div id="section-Contact" class="section section-Contact">
         <div class="">
-          <p>+ ajouter cv + crédits</p>
 
           <div class="content-frame contact-frame">
             <h1 class="titre-section">Me Contacter</h1>
 
             <form action="https://formspree.io/f/xgvenagv" method="POST">
 
-              <label>Email:<input type="email" name="email"></label>
-              <label>Message:<textarea name="message"></textarea></label>
-          
+              <label>Email:<input style="width: 325px;" type="email" name="email"></label>
+              <label>Message:<textarea style="width: 325px;" name="message"></textarea></label>
+
               <button type="submit">Envoyer</button>
             </form>
 
             <h1 class="titre-section">Ou via :</h1>
-            ->linkedIn / discord / mail simple
+            <div class="center-class">
+              <a href="https://www.linkedin.com/in/tc-maxime-porte/">
+                <img class="contact-image" src="linkedin.png" alt="linkedIn link">
+              </a>
+  
+              <br>
+  
+              <div class="flex-row">
+                <img class="contact-image" src="discord.png" alt="discord - tortue_veloce">
+                <p class="flex-row">tortue_veloce</p>
+              </div>
+
+              <br>
+
+              <a href="mailto:porte.maxime@outlook.com">
+                <img class="contact-image" src="email.png" alt="mail link">
+              </a>
+            </div>
+            
+            <h1 class="titre-section">Mon CV :</h1>
+
+            <a href="CV Maxime Porte.pdf" class="center-class" download="filename"><p>Téléchargement</p></a>
+
           </div>
         </div>
       </div>

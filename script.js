@@ -27,9 +27,9 @@ function setPrimaryButtonState(e) {
   primaryMouseButtonDown = (flags & 1) === 1;
   
     if (primaryMouseButtonDown == false) {
-        document.documentElement.style.setProperty('--persistent-glow-color', persistentGlowRGBUp);
+        document.documentElement.style.setProperty('--persistent-glow-color', 'rgb('+persistentGlowRGBUp+')');
     } else {
-        document.documentElement.style.setProperty('--persistent-glow-color', persistentGlowRGBDown);
+        document.documentElement.style.setProperty('--persistent-glow-color', 'rgb('+persistentGlowRGBDown+')');
     }
 }
 
