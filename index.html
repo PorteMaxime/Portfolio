@@ -25,7 +25,6 @@
     <!-- Fin Fond site -->
 
     <!-- Navbar -->
-    <div id="navbar-container">
       <div id="navbar">
         <div id="stripe-pattern">
           <ul>
@@ -37,7 +36,6 @@
           </ul>
         </div>
       </div>
-    </div>
 
     <button id="toggle-navbar" class="button-style">☰</button>
     <!-- Fin Navbar -->
@@ -63,12 +61,33 @@
           
         <div class="profile-container">
           
-          <div class="content-frame position-change-frame">
+          <div class="content-frame position-change-frame first-frame">
             <h1 class="titre-section">À propos de moi</h1>
-            <img src="profil_image.jpg" alt="Photo" class="profile-photo">
-            <p>actuellement en 2ème année de bts sio (option slam) à vénissieux</p>
-            <p>mon cv et me contacter</p>
-            <p>projet professionnel</p>
+            <table class="about-table">
+              <tr>
+                <td class="td-image">
+                  <div class="image-container">
+                    <img src="profil_image.jpg" alt="Photo" class="profile-photo">
+                  </div>
+                </td>
+                <td class="td-text">
+                  <div class="text-container">
+                    <h3>À propos de moi</h3>
+                    <p>Hey !</p>
+                    <p class="text-justify">Je suis Maxime Porte, étudiant en alternance en deuxième année de BTS SIO (Services Informatiques aux Organisations) 
+                      avec l'option SLAM (Solutions Logicielles et Application Métier, orientée vers le développement), à Vénissieux.</p>
+                    <h3>Petit sommaire</h3>
+                    <p class="bold-text">Des informations sur le bts et mon alternance (plus bas)</p>
+                    <p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">Mes projets</a></p>
+                    <p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-Epreuve">L'épreuve E4 du BTS</a></p>
+                    <p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-Contact">Me contacter</a></p>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </div>
 
           <div class="content-frame position-change-frame">
@@ -93,26 +112,35 @@
 
           <div class="content-frame position-change-frame">
             <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
-            <p>Avant de commencer à parler de moi, je vous propose de présenter en premier lieu ma filière dont je suis affecté
+            <p class="text-justify">
+              Ma formation, le BTS SIO(Brevet de Technicien Supérieur aux Services Informatiques aux Organisations) qui a donc une durée de 2 ans, forme aux métiers d'administrateur réseau ou de développeur, selon la spécialité choisie.
+            </p>
+            <p class="text-justify">
+              J'ai choisi la spécialité SLAM(Solutions Logicielles et Applications Métier).
+              <br>
+              L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
+            </p>
+            <p class="text-justify">
+              Ma formation a été effectuée au lycée Jacques Brel, à Vénissieux
+            </p>
 
-              Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. Pour par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
-            </p>
-            <p> Je vous présente à présent la formation que j'ai suivie et dans laquelle j'ai évolué pendant 2 ans.
-
-              Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. Et ainsi par la suite intégré directement le marché du travail ou continuer des études, dans le domaine de l'informatique.
-            </p>
-            
-            <p>
-              L'acronyme SLAM signifie « Solutions Logicielles et Applications Métier ». Voici quelques indications sur cette seconde option du BTS SIO, ainsi des précisions sur cette formation et ses débouchés. L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs. Grâce à des cours spécifiques, les diplômés seront capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise. Ils pourront également diriger l’intégration, la sécurisation et la configuration des serveurs, mais aussi des postes clients et des équipements d’interconnexion.
-            </p>
             <h1 class="titre-section">Apprenti développeur web au SGAMI SUD-EST</h1>
-            <p>
-              étant en alternance, j'ai la chance de travailler à mi-temps. Dans un monde de désolation, où seule les acronymes survivent, j'ai nommé le SGAMI : le Secrétariat Général pour l'Administration du Ministère de l'Intérieur
+            <p class="text-justify less-width">
+              Étant en alternance, j'ai la chance de travailler à mi-temps.
+              <br>
+              Durant mon temps de travail, je suis au SGAMI(Secrétariat Général pour l'Administration du Ministère de l'Intérieur) SUD-EST, et plus précisemment à la DSIC(Direction des Systèmes d'Information et de Communication).
+              Il est possible de continuer, le BIFN(Bureau Innovation et Fabrique Numérique), à l'intérieur duquel je me trouve.
             </p>
-            <p>Voici un organigrame pour me situer :</p>
-            <img>(insérer organigrame ici)
-            <p>Ma place se trouve au sein du BIFN (le bureau innovation et fabrique numérique). Parmis les développeurs sauvages, j'ai eu l'occasion de découvrir le monde impitoyable du travail</p>
+            <p class="text-justify less-width">Un organigrame du SGAMI SUD-EST se trouve en dessous de ce cadre</p>
+            <p class="text-justify less-width">Ma place se trouve au sein du BIFN (le bureau innovation et fabrique numérique). Parmis les développeurs sauvages, j'ai eu l'occasion de découvrir le monde impitoyable du travail</p>
             <p></p>
+          </div>
+          
+          <div class="content-frame position-change-frame">
+            <h1 class="titre-section">Organigrame de la DSIC du SGAMI SUD-EST</h1>
+            <div style="width: 80%; height: 550px; margin-left: 10%; margin-right: 10%;">
+              <embed src="Organigramme - FEVRIER 2025.odp.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
           </div>
           
         </div>
@@ -122,7 +150,7 @@
       <!-- Projets -->
       <div id="section-Projets" class="section section-Projets">
         
-        <div class="content-frame position-change-frame">
+        <div class="content-frame position-change-frame first-frame">
           <h1 class="titre-section">Mes projets</h1>
           <p>Les projets que j'ai réalisé jusqu'à maintenant en formation, en travaillant et mes projets personnels sont présents ici.</p>
           
@@ -219,14 +247,14 @@
       <!-- Épreuve -->
       <div id="section-Epreuve" class="section section-Epreuve">
             
-        <div class="content-frame position-change-frame">
+        <div class="content-frame position-change-frame first-frame">
           <h1 class="titre-section">Épreuve e5 - Portfolio</h1>
           <p>description courte de l'épreuve</p>
         </div>
 
         <div class="content-frame position-change-frame">
           <h1 class="titre-section">Mes projets</h1>
-          <p>Mes projets sont visibles en allant sur la section "projets" ou en cliquant sur <a href="#" class="button-style" data-section="section-Projets">Ce lien</a></p>
+          <p>Mes projets sont visibles en allant sur la section "projets" via la barre de navigation ou en cliquant sur <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">Ce lien</a></p>
         </div>
 
         <div class="content-frame position-change-frame">
@@ -273,7 +301,9 @@
             
             <h1 class="titre-section">Mon CV :</h1>
 
-            <a href="CV Maxime Porte.pdf" class="center-class" download="filename"><p>Téléchargement</p></a>
+            <p>
+              <a href="CV Maxime Porte.pdf" class="bouncing-letters">Téléchargement</a>
+            </p>
 
           </div>
         </div>
