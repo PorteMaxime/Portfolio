@@ -2,6 +2,7 @@ var primaryMouseButtonDown = false;
 
 for(const text of document.querySelectorAll(".bouncing-letters")) {
     const letters = text.textContent.split("");
+    console.log(letters)
 
     text.innerHTML = "";
 
@@ -10,9 +11,12 @@ for(const text of document.querySelectorAll(".bouncing-letters")) {
 
         span.className = "modal-action-text-letter";
 
-        span.style.animationDelay = `${index * 300}ms`;
-        span.style.animationDuration = `${(letters.length * 300) + 1000}ms`;
+        span.style.animationDelay = `${index * 150}ms`;
+        span.style.animationDuration = `${(letters.length * 200) + 2000}ms`;
 
+        if (letter == " ") {
+            letter = '&nbsp;'
+        }
         span.innerHTML = letter;
 
         text.appendChild(span);
@@ -39,7 +43,6 @@ document.addEventListener("mouseup", setPrimaryButtonState);
 
 const container = document.getElementById("magic-mouse-container"),
     persistentGlow = document.getElementById("persistent-glow"),
-    navbarContainer = document.getElementById("navbar-container"),
     navbar = document.getElementById("navbar"),
     toggleNavbar = document.getElementById("toggle-navbar");
 
@@ -100,10 +103,8 @@ window.onmousemove = e => {
 let navbarVisible = false;
 toggleNavbar.addEventListener("click", () => {
     if (navbarVisible) {
-        navbarContainer.style.top = "-130px";
-        navbar.style.top = "-130px";
+        navbar.style.top = "-155px";
     } else {
-        navbarContainer.style.top = "0";
         navbar.style.top = "0";
     }
     navbarVisible = !navbarVisible;
@@ -112,8 +113,7 @@ toggleNavbar.addEventListener("click", () => {
 // Fonction pour fermer la navbar si on clique en dehors
 document.addEventListener("click", (event) => {
     if (navbarVisible && !navbar.contains(event.target) && !toggleNavbar.contains(event.target)) {
-        navbarContainer.style.top = "-130px";
-        navbar.style.top = "-130px";
+        navbar.style.top = "-155px";
         navbarVisible = false;
     }
 });
