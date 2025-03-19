@@ -2,7 +2,6 @@ var primaryMouseButtonDown = false;
 
 for(const text of document.querySelectorAll(".bouncing-letters")) {
     const letters = text.textContent.split("");
-    console.log(letters)
 
     text.innerHTML = "";
 
@@ -285,26 +284,24 @@ document.addEventListener("DOMContentLoaded", function () {
     container.innerHTML = ""; // Vider le contenu existant avant d'ajouter les images
 
     const spacingX = 120; // Espacement horizontal entre les images
-    const spacingY = 100; // Espacement vertical entre les images
-    const containerWidth = container.offsetWidth;
-    const containerHeight = container.offsetHeight;
 
-    const cols = Math.ceil(containerWidth / spacingX); // Nombre de colonnes nécessaires
-    const rows = Math.ceil(containerHeight / spacingY); // Nombre de lignes nécessaires
+
+    const cols = 20; // Nombre de colonnes nécessaires
+    const rows = 9; // Nombre de lignes nécessaires
 
     for (let row = 0; row < rows; row++) {
         // Choisir l'image selon l'ordre dans le tableau, en répétant les images
         const imageIndex = Math.floor(Math.random() * images.length);
         const randomImage = images[imageIndex];
 
-        for (let col = 0; col < cols; col++) {
+        for (let col = 0; col < cols + 1; col++) {
             const img = document.createElement("img");
             img.src = randomImage; // Utiliser la même image pour toute la ligne
             img.classList.add("pattern-image");
 
             // Placer les images en diagonale vers la droite (en fonction du row)
-            img.style.left = `${col * spacingX + (row % 2) * (spacingX / 2) - 120}px`;
-            img.style.top = `${row * spacingY}px`; // Décalage par ligne
+            img.style.left = `${col * 6 + (row % 2 * 3)}%`;
+            img.style.top = `${row * 11}%`; // Décalage par ligne
 
             container.appendChild(img);
         }

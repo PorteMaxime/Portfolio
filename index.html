@@ -31,7 +31,7 @@
               <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Accueil">Accueil</a></li>
               <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Profil">Profil</a></li>
               <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Projets">Projets</a></li>
-              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Epreuve">Épreuve Portfolio</a></li>
+              <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-BTS-SIO">Le BTS SIO</a></li>
               <li><a href="#"  class="nav-link button-style bouncing-letters" data-section="section-Contact">Contact</a></li>
           </ul>
         </div>
@@ -81,7 +81,7 @@
                     <p>
                       <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">Mes projets</a></p>
                     <p>
-                      <a href="#" class="nav-link bouncing-letters" data-section="section-Epreuve">L'épreuve E4 du BTS</a></p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-BTS-SIO">Le BTS SIO</a></p>
                     <p>
                       <a href="#" class="nav-link bouncing-letters" data-section="section-Contact">Me contacter</a></p>
                   </div>
@@ -110,39 +110,6 @@
             <h3>La suite au prochain épisode...</h3>
           </div>
 
-          <div class="content-frame position-change-frame">
-            <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
-            <p class="text-justify">
-              Ma formation, le BTS SIO(Brevet de Technicien Supérieur aux Services Informatiques aux Organisations) qui a donc une durée de 2 ans, forme aux métiers d'administrateur réseau ou de développeur, selon la spécialité choisie.
-            </p>
-            <p class="text-justify">
-              J'ai choisi la spécialité SLAM(Solutions Logicielles et Applications Métier).
-              <br>
-              L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
-            </p>
-            <p class="text-justify">
-              Ma formation a été effectuée au lycée Jacques Brel, à Vénissieux
-            </p>
-
-            <h1 class="titre-section">Apprenti développeur web au SGAMI SUD-EST</h1>
-            <p class="text-justify less-width">
-              Étant en alternance, j'ai la chance de travailler à mi-temps.
-              <br>
-              Durant mon temps de travail, je suis au SGAMI(Secrétariat Général pour l'Administration du Ministère de l'Intérieur) SUD-EST, et plus précisemment à la DSIC(Direction des Systèmes d'Information et de Communication).
-              Il est possible de continuer, le BIFN(Bureau Innovation et Fabrique Numérique), à l'intérieur duquel je me trouve.
-            </p>
-            <p class="text-justify less-width">Un organigrame du SGAMI SUD-EST se trouve en dessous de ce cadre</p>
-            <p class="text-justify less-width">Ma place se trouve au sein du BIFN (le bureau innovation et fabrique numérique). Parmis les développeurs sauvages, j'ai eu l'occasion de découvrir le monde impitoyable du travail</p>
-            <p></p>
-          </div>
-          
-          <div class="content-frame position-change-frame">
-            <h1 class="titre-section">Organigrame de la DSIC du SGAMI SUD-EST</h1>
-            <div style="width: 80%; height: 550px; margin-left: 10%; margin-right: 10%;">
-              <embed src="Organigramme - FEVRIER 2025.odp.pdf" type="application/pdf" width="100%" height="100%">
-            </div>
-          </div>
-          
         </div>
       </div>
       <!-- Fin Profil -->
@@ -161,30 +128,32 @@
           <br>
          
           <div id="filter-buttons">
-            <button class="filter-btn" data-category="catégorie 1">Projets personnels</button>
-            <button class="filter-btn" data-category="catégorie 231">Projets en formation</button>
-            <button class="filter-btn" data-category="catégorie 22">Projets au travail</button>
-            <button class="filter-btn" data-category="catégorie 2123123">(langages de programmation)</button>
-            <button class="filter-btn" data-category="catégorie 23111">(applications utilisées)</button>
+            <button class="filter-btn" data-category="projet Formation">Projets en formation</button>
+            <button class="filter-btn" data-category="projet Travail">Projets au travail</button>
+            <button class="filter-btn" data-category="projet Personnel">Projets personnels</button>
+
+            <button class="filter-btn" data-category="projet Gitlab">Gitlab</button>
+            <button class="filter-btn" data-category="projet Symfony">Symfony</button>
+            <button class="filter-btn" data-category="projet Angular">Angular</button>
+            <button class="filter-btn" data-category="projet SQL">SQL</button>
+            <!-- <button class="filter-btn" data-category="appsUtil">(applications utilisées)</button> -->
           </div>
         </div>
 
 
         <!-- Cartes -->
-        <div id="cards">
+        <div id="cards" class="less-width">
 
-          <div class="card" data-id="popup1">
+          <!-- Projets en formation -->
+          <div class="card" data-id="popup-GLPI">
             <div class="card-content">
-              <img src="profil_image.jpg" alt="Photo" class="card-image">
+              <img src="glpi.jpg" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
-                    <h1 class="titre-carte">long titre a a a</h1>
+                    <h1 class="titre-carte">GLPI</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">catégorie 1</h2>
-                      <h2 class="catégorie-carte">catégorie 231</h2>
-                      <h2 class="catégorie-carte">catégorie 22</h2>
-                      <h2 class="catégorie-carte">catégorie 2123123</h2>
+                      <h2 class="catégorie-carte">projet Formation</h2>
                     </div>
                   </div>    
                 </div>
@@ -192,23 +161,26 @@
             </div>
           </div>
 
-          <div id="popup1" class="popup">
+          <div id="popup-GLPI" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 id="popup1-title"></h1>
-                <p id="popup1-text">Description du projet 1.</p>
+                <h1 id="popup-GLPI-title"></h1>
+                <p id="popup-GLPI-text">Description de GLPI</p>
             </div>
           </div>
 
-          <div class="card" data-id="popup2">
+          <div class="card" data-id="popup-Logeproj">
             <div class="card-content">
+              <img src="logeproj.jpg" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
-                    <h1 class="titre-carte">titre.</h1>
+                    <h1 class="titre-carte">Logeproj</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">catégorie 231</h2>
-                      <h2 class="catégorie-carte">catégorie 23111</h2>
+                      <h2 class="catégorie-carte">projet Formation</h2>
+                      <h2 class="catégorie-carte">projet Gitlab</h2>
+                      <h2 class="catégorie-carte">projet Angular</h2>
+                      <h2 class="catégorie-carte">projet SQL</h2>
                     </div>
                   </div>
                 </div>
@@ -216,53 +188,268 @@
             </div>
           </div>
 
-          <div id="popup2" class="popup">
+          <div id="popup-Logeproj" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 id="popup2-title"></h1>
-                <p id="popup2-text">Description du projet 2.</p>
+                <h1 id="popup-Logeproj-title"></h1>
+                <p id="popup-Logeproj-text">Description de logeproj</p>
             </div>
           </div>
 
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card" data-id="popup-Veille">
+            <div class="card-content">
+              <img src="veille.png" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Veille Technologique</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Formation</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-Veille" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Veille-title"></h1>
+                <p id="popup-Veille-text">Description de la veille technologique</p>
+            </div>
+          </div>
+
+          <!-- Projets au travail -->
+          <div class="card" data-id="popup-PHP">
+            <div class="card-content">
+              <img src="php.png" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Portage de PHP</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Travail</h2>
+                      <h2 class="catégorie-carte">projet Gitlab</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="popup-PHP" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-PHP-title"></h1>
+                <p id="popup-PHP-text">Description du portage PHP</p>
+            </div>
+          </div>
+
+          <div class="card"  data-id="popup-Stockware">
+            <div class="card-content">
+              <img src="stockware.png" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Stockware</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Travail</h2>
+                      <h2 class="catégorie-carte">projet Gitlab</h2>
+                      <h2 class="catégorie-carte">projet Symfony</h2>
+                      <h2 class="catégorie-carte">projet SQL</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="popup-Stockware" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Stockware-title"></h1>
+                <p id="popup-Stockware-text">Description de Stockware</p>
+            </div>
+          </div>
+
+          <div class="card" data-id="popup-Agimmo">
+            <div class="card-content">
+              <!-- <img src="glpi.jpg" alt="Photo" class="card-image"> -->
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Agimmo</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Travail</h2>
+                      <h2 class="catégorie-carte">projet Gitlab</h2>
+                      <h2 class="catégorie-carte">projet Symfony</h2>
+                      <h2 class="catégorie-carte">projet SQL</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-Agimmo" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Agimmo-title"></h1>
+                <p id="popup-Agimmo-text">Description de Agimmo</p>
+            </div>
+          </div>
+
+          <!-- Projets personnels -->
+          <div class="card" data-id="popup-Blender">
+            <div class="card-content">
+              <img src="blender.jpg" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Blender</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Personnel</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-Blender" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Blender-title"></h1>
+                <p id="popup-Blender-text">Description de Blender</p>
+            </div>
+          </div>
+
+          <div class="card" data-id="popup-Unreal">
+            <div class="card-content">
+              <img src="unreal engine.png" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Unreal Engine</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Personnel</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-Unreal" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Unreal-title"></h1>
+                <p id="popup-Unreal-text">Description de Unreal Engine</p>
+            </div>
+          </div>
+          
+          <!-- Autres -->
+          <div class="card" data-id="popup-Portfolio">
+            <div class="card-content">
+              <img src="portfolio.png" alt="Photo" class="card-image">
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <div class="card-info-text">
+                    <h1 class="titre-carte">Création du portfolio</h1>
+                    <div class="card-categories">
+                      <h2 class="catégorie-carte">projet Formation</h2>
+                      <h2 class="catégorie-carte">projet Personnel</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup-Portfolio" class="popup">
+            <div class="popup-content">
+                <button class="close-btn button-style">&times;</button>
+                <h1 id="popup-Portfolio-title"></h1>
+                <p id="popup-Portfolio-text">Description de la création du portfolio</p>
+            </div>
+          </div>
+          
         </div>
           <!-- Fin Cartes -->
-
+          
+          <p>mettre en avant : GitLab, création documentation portage</p>
+          <p>évoquer : Chiffrement mots de passe jogeproj, Commande make qa-cs-fix, Mise en place du poste de travail, difficulté définir temps réalisation issues</p>
       </div>
       <!-- Fin Projets -->
 
-      <!-- Épreuve -->
-      <div id="section-Epreuve" class="section section-Epreuve">
-            
+      <!-- BTS SIO -->
+      <div id="section-BTS-SIO" class="section section-BTS-SIO">
+
         <div class="content-frame position-change-frame first-frame">
-          <h1 class="titre-section">Épreuve e5 - Portfolio</h1>
-          <p>description courte de l'épreuve</p>
+          <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
+          <p class="text-justify lesser-width">
+            Ma formation, le BTS SIO(Brevet de Technicien Supérieur aux Services Informatiques aux Organisations) qui a donc une durée de 2 ans, forme aux métiers d'administrateur réseau ou de développeur, selon la spécialité choisie.
+          </p>
+          <p class="text-justify lesser-width">
+            J'ai choisi la spécialité SLAM(Solutions Logicielles et Applications Métier).
+            <br>
+            L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
+          </p>
+          <p class="text-justify lesser-width">
+            Ma formation a été effectuée au lycée Jacques Brel, à Vénissieux.
+          </p>
+
+          <h1 class="titre-section">Apprenti développeur web au SGAMI SUD-EST</h1>
+          <p class="text-justify lesser-width">
+            Étant en alternance, j'ai la chance de travailler à mi-temps.
+            <br>
+            Durant mon temps de travail, je fais partie de la DSIC du SGAMI SUD-EST, et plus précisemment du BIFN (la liste des acronymes ainsi qu'un organigrame se trouvent plus bas).
+          </p>
+          <p class="text-justify lesser-width">
+              Le BIFN est le "bureau" des développeurs web qui, entre autre, créent des applications web afin de soutenir les autres bureaux, mais aussi la police.
+          </p>
+
+          <h1 class="titre-section">Liste des acronymes</h1>
+          <p class="text-justify lesser-width">La liste des acronymes se trouve ci-dessous pour permettre une lecture plus agréable de la présentation de ma formation :</p>
+          <p class="lesser-width">SGAMI = Secrétariat Général pour l'Administration du Ministère de l'Intérieur</p>
+          <p class="lesser-width">DSIC = Direction des Systèmes d'Information et de Communication</p>
+          <p class="lesser-width">BIFN = Bureau Innovation et Fabrique Numérique</p>
+          <!-- <p class="lesser-width"></p> -->
+        </div>
+        
+        <div class="content-frame position-change-frame">
+          <h1 class="titre-section">Organigrame de la DSIC du SGAMI SUD-EST</h1>
+          <div class="organigram-div">
+            <embed src="Organigramme - FEVRIER 2025.odp.pdf" type="application/pdf" width="100%" height="100%">
+          </div>
         </div>
 
         <div class="content-frame position-change-frame">
+          <h1 class="titre-section">Épreuve e4 - Portfolio</h1>
+          <p class="text-justify lesser-width">
+            Une des épreuves du BTS SIO est l'épreuve E4, aussi connue sous le nom de "épreuve portfolio". C'est pour cette épreuve que ce portfolio a été crée.
+          </p>
+          <p class="text-justify lesser-width">
+            L'épreuve est divisée en deux parties :
+            <br>
+            - Pendant 10 minutes (au maximum), le candidat présente son portfolio et présente les projets réalisés pendant les deux années à l'aide d'un tableau de compétence, en formation et au travail (ou en stage).
+            <br>
+            - Puis, 30 minutes d'échange avec le jury ont lieu sur les éléments présentés précédemment
+          </p>
+
           <h1 class="titre-section">Mes projets</h1>
           <p>Mes projets sont visibles en allant sur la section "projets" via la barre de navigation ou en cliquant sur <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">Ce lien</a></p>
         </div>
 
         <div class="content-frame position-change-frame">
           <h1 class="titre-section">Le tableau des compétences</h1>
-          <img src="profil_image.jpg" alt="Photo" class="table-picture">
+          <iframe src="./Tableau des compétences.html" class="table-picture" allowTransparency="true" scrolling="yes" frameborder="0">
+          </iframe>
         </div>
+
       </div>
-      <!-- Fin Épreuve -->
+      <!-- Fin BTS SIO -->
 
       <!-- Contact -->
       <div id="section-Contact" class="section section-Contact">
