@@ -218,10 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (popup) {
                 popup.classList.add('show');
                 popup.classList.remove('hide');
-
-                // Dynamiquement mettre à jour le contenu si nécessaire
-                const title = card.querySelector('.titre-carte').textContent;
-                popup.querySelector('h1').textContent = title;
             }
         });
     });
@@ -267,17 +263,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const images = [
-        "user-solid.svg",
-        "wand-sparkles-solid.svg",
-        "book-solid.svg",
-        "pen-solid.svg",
-        "folder-regular.svg",
-        "python-brands-solid.svg",
-        "stack-overflow-brands-solid.svg",
-        "file-solid.svg",
-        "magnifying-glass-solid.svg",
-        "briefcase-solid.svg",
-        "star-regular.svg",
+        "./icones fond/user-solid.svg",
+        "./icones fond/wand-sparkles-solid.svg",
+        "./icones fond/book-solid.svg",
+        "./icones fond/pen-solid.svg",
+        "./icones fond/folder-regular.svg",
+        "./icones fond/python-brands-solid.svg",
+        "./icones fond/stack-overflow-brands-solid.svg",
+        "./icones fond/file-solid.svg",
+        "./icones fond/magnifying-glass-solid.svg",
+        "./icones fond/briefcase-solid.svg",
+        "./icones fond/star-regular.svg",
     ];
 
     const container = document.getElementById("images-pattern");

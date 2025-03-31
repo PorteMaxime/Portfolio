@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icones fond/user-solid.svg">
 </head>
 <body>
 
@@ -58,9 +59,9 @@
 
       <!-- Profil -->
       <div id="section-Profil" class="section section-Profil">
-          
+
         <div class="profile-container">
-          
+
           <div class="content-frame position-change-frame first-frame">
             <h1 class="titre-section">À propos de moi</h1>
             <table class="about-table">
@@ -76,14 +77,14 @@
                     <p>Hey !</p>
                     <p class="text-justify">Je suis Maxime Porte, étudiant en alternance en deuxième année de BTS SIO (Services Informatiques aux Organisations) 
                       avec l'option SLAM (Solutions Logicielles et Application Métier, orientée vers le développement), à Vénissieux.</p>
-                    <h3>Petit sommaire</h3>
-                    <p class="bold-text">Des informations sur le bts et mon alternance (plus bas)</p>
+                    <h3>Sommaire du portfolio</h3>
+                    <p class="bold-text">> Informations sur le bts et mon alternance (plus bas)</p>
                     <p>
-                      <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">Mes projets</a></p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-Projets">> Mes projets</a></p>
                     <p>
-                      <a href="#" class="nav-link bouncing-letters" data-section="section-BTS-SIO">Le BTS SIO</a></p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-BTS-SIO">> Le BTS SIO</a></p>
                     <p>
-                      <a href="#" class="nav-link bouncing-letters" data-section="section-Contact">Me contacter</a></p>
+                      <a href="#" class="nav-link bouncing-letters" data-section="section-Contact">> Me contacter</a></p>
                   </div>
                 </td>
               </tr>
@@ -142,12 +143,12 @@
 
 
         <!-- Cartes -->
-        <div id="cards" class="less-width">
+        <div id="cards" class="less-width cards-margin">
 
-          <!-- Projets en formation -->
+          <!-- Projets en formation --> <!--
           <div class="card" data-id="popup-GLPI">
             <div class="card-content">
-              <img src="glpi.jpg" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/glpi.png" alt="Photo" class="card-image-wide">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -164,14 +165,18 @@
           <div id="popup-GLPI" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-GLPI-title"></h1>
-                <p id="popup-GLPI-text">Description de GLPI</p>
+                <h1 class="titre-section">GLPI</h1>
+                <p>Description de GLPI</p>
+                contexte
+                objectif
+                réalisation
+                <img src="./Projets/glpi menu principal.avif" alt="Photo" class="popup-image">
             </div>
           </div>
-
+-->
           <div class="card" data-id="popup-Logeproj">
             <div class="card-content">
-              <img src="logeproj.jpg" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/logeproj.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -191,14 +196,50 @@
           <div id="popup-Logeproj" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Logeproj-title"></h1>
-                <p id="popup-Logeproj-text">Description de logeproj</p>
+                <h1 class="titre-section half-width">Logeproj</h1>
+                <h2 class="popup-small-title">contexte</h2>
+                <p></p>
+                <h2 class="popup-small-title">Compétences abordées</h2>
+                <div class="popup-related-skills">
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Gérer le patrimoine informatique</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Travailler en mode projet</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Organiser son développement professionnel</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  </div>
+                </div>
+                <h2 class="popup-small-title">réalisation</h2>
+                Chiffrement mots de passe jogeproj
             </div>
           </div>
 
           <div class="card" data-id="popup-Veille">
             <div class="card-content">
-              <img src="veille.png" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/veille.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -215,15 +256,50 @@
           <div id="popup-Veille" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Veille-title"></h1>
-                <p id="popup-Veille-text">Description de la veille technologique</p>
+                <h1 class="titre-section half-width">Veille Technologique</h1>
+                <h2 class="popup-small-title">contexte</h2>
+                <p></p>
+                <h2 class="popup-small-title">Compétences abordées</h2>
+                <div class="popup-related-skills">
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Gérer le patrimoine informatique</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Travailler en mode projet</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Organiser son développement professionnel</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  </div>
+                </div>
+                <h2 class="popup-small-title">réalisation</h2>
             </div>
           </div>
 
           <!-- Projets au travail -->
           <div class="card" data-id="popup-PHP">
             <div class="card-content">
-              <img src="php.png" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/php.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -240,15 +316,53 @@
           
           <div id="popup-PHP" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-PHP-title"></h1>
-                <p id="popup-PHP-text">Description du portage PHP</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Portage de PHP</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p></p>
+              <h2 class="popup-small-title">Compétences abordées</h2>
+              <div class="popup-related-skills">
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Gérer le patrimoine informatique</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Travailler en mode projet</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                  <p class="line-skill"></p>
+                  <p>AAAAAAAAAAAAAAAAAAAAAA</p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Organiser son développement professionnel</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+              </div>
+              <h2 class="popup-small-title">réalisation</h2>
+              <img src="./Projets/Captures d'écran boulot/wiki portage php 8.1.PNG" alt="Photo" class="popup-image">
             </div>
           </div>
 
           <div class="card"  data-id="popup-Stockware">
             <div class="card-content">
-              <img src="stockware.png" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/stockware.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -267,15 +381,54 @@
           
           <div id="popup-Stockware" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Stockware-title"></h1>
-                <p id="popup-Stockware-text">Description de Stockware</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Stockware</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p></p>
+              <h2 class="popup-small-title">Compétences abordées</h2>
+              <div class="popup-related-skills">
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Gérer le patrimoine informatique</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Travailler en mode projet</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Organiser son développement professionnel</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+              </div>
+              <h2 class="popup-small-title">réalisation</h2>
+              <img src="./Projets/Captures d'écran boulot/connexion stockware.PNG" alt="Photo" class="popup-image">
+              <img src="./Projets/Captures d'écran boulot/issue board stockware.PNG" alt="Photo" class="popup-image">
+              <img src="./Projets/Captures d'écran boulot/putty fenêtre connexion.PNG" alt="Photo" class="popup-image">
+              <img src="./Projets/Captures d'écran boulot/putty make start.PNG" alt="Photo" class="popup-image">
             </div>
           </div>
 
           <div class="card" data-id="popup-Agimmo">
             <div class="card-content">
-              <!-- <img src="glpi.jpg" alt="Photo" class="card-image"> -->
+              <img src="./Projets/icones projets/building-solid.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -294,16 +447,54 @@
 
           <div id="popup-Agimmo" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Agimmo-title"></h1>
-                <p id="popup-Agimmo-text">Description de Agimmo</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Agimmo</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p></p>
+              <h2 class="popup-small-title">Compétences abordées</h2>
+              <div class="popup-related-skills">
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Gérer le patrimoine informatique</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Travailler en mode projet</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Organiser son développement professionnel</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+              </div>
+              <h2 class="popup-small-title">réalisation</h2>
+              <img src="./Projets/Captures d'écran boulot/réunion agimmo.PNG" alt="Photo" class="popup-image">
+              <img src="./Projets/Captures d'écran boulot/putty make start.PNG" alt="Photo" class="popup-image">
+              <img src="./Projets/Captures d'écran boulot/make qa-cs-fix.PNG" alt="Photo" class="popup-image">
             </div>
           </div>
 
           <!-- Projets personnels -->
           <div class="card" data-id="popup-Blender">
             <div class="card-content">
-              <img src="blender.jpg" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/blender.png" alt="Photo" class="card-image-wide">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -319,15 +510,17 @@
 
           <div id="popup-Blender" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Blender-title"></h1>
-                <p id="popup-Blender-text">Description de Blender</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Blender</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p></p>
+              <h2 class="popup-small-title">réalisation</h2>
             </div>
           </div>
 
           <div class="card" data-id="popup-Unreal">
             <div class="card-content">
-              <img src="unreal engine.png" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/unreal engine.png" alt="Photo" class="card-image-wide">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -343,16 +536,18 @@
 
           <div id="popup-Unreal" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Unreal-title"></h1>
-                <p id="popup-Unreal-text">Description de Unreal Engine</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Unreal Engine</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p></p>
+              <h2 class="popup-small-title">réalisation</h2>
             </div>
           </div>
           
           <!-- Autres -->
           <div class="card" data-id="popup-Portfolio">
             <div class="card-content">
-              <img src="portfolio.png" alt="Photo" class="card-image">
+              <img src="./Projets/icones projets/portfolio.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
@@ -369,17 +564,54 @@
 
           <div id="popup-Portfolio" class="popup">
             <div class="popup-content">
-                <button class="close-btn button-style">&times;</button>
-                <h1 id="popup-Portfolio-title"></h1>
-                <p id="popup-Portfolio-text">Description de la création du portfolio</p>
+              <button class="close-btn button-style">&times;</button>
+              <h1 class="titre-section half-width">Création du portfolio</h1>
+              <h2 class="popup-small-title">contexte</h2>
+              <p>Une des épreuves du BTS SIO est l'épreuve E4 (épreuve "portfolio"). Le but de cette épreuve est de passer devant un jury en présentant le portfolio, et plus précisemment, les différents projets réalisés au court de la formation, aussi bien en formation que durant les stages, ou le temps de travail si l'étudiant est en alternance. C'est aussi l'occasion de créer un portfolio personnel servant d'appui pour le futur (par exemple, lors de recherche d'emploi).</p>
+              <h2 class="popup-small-title">Compétences abordées</h2>
+              <div class="popup-related-skills">
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Gérer le patrimoine informatique</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Travailler en mode projet</p>
+                  <p class="line-skill"></p>
+                  <p>NON <img class="skill-check-cross card-image card-image" src="xmark-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+                <div class="skill-card related-skill">
+                  <p class="skill-name">Organiser son développement professionnel</p>
+                  <p class="line-skill"></p>
+                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                </div>
+              </div>
+              <h2 class="popup-small-title">réalisation</h2>
+              <p>
+                Ce portfolio est un site web réalisé en HTML, CSS et Javascript, crée via l'outil Visual studio 2022
+              </p>
+              <img src="./Projets/code portfolio.png" alt="Photo" class="popup-image">
             </div>
           </div>
           
         </div>
           <!-- Fin Cartes -->
           
-          <p>mettre en avant : GitLab, création documentation portage</p>
-          <p>évoquer : Chiffrement mots de passe jogeproj, Commande make qa-cs-fix, Mise en place du poste de travail, difficulté définir temps réalisation issues</p>
       </div>
       <!-- Fin Projets -->
 
@@ -421,7 +653,7 @@
         <div class="content-frame position-change-frame">
           <h1 class="titre-section">Organigrame de la DSIC du SGAMI SUD-EST</h1>
           <div class="organigram-div">
-            <embed src="Organigramme - FEVRIER 2025.odp.pdf" type="application/pdf" width="100%" height="100%">
+            <embed src="./Organigramme - FEVRIER 2025.odp.pdf" type="application/pdf" width="100%" height="100%">
           </div>
         </div>
 
@@ -469,7 +701,7 @@
             <h1 class="titre-section">Ou via :</h1>
             <div class="center-class">
               <a href="https://www.linkedin.com/in/tc-maxime-porte/">
-                <img class="contact-image" src="linkedin.png" alt="linkedIn link">
+                <img class="contact-image" src="linkedin.png" alt="Lien vers le profil LinkedIn">
               </a>
   
               <br>
@@ -505,3 +737,10 @@
 
 </body>
 </html>
+
+<!--
+
+- modifier icône onglet
+- détourer correctement images des projet
+
+-->
