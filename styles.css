@@ -447,11 +447,17 @@ body {
     padding-top: 20px;
 }
 
-#filter-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+#filter-div {
     margin-bottom: 20px;
+}
+
+.filter-buttons {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .filter-btn {
@@ -611,7 +617,6 @@ body {
     border: 0.1rem solid rgb(120 120 120);
     border-radius: 0.8rem;
     margin-top: 2px;
-    margin-bottom: 2px;
     background-color: rgb(180 180 180);
 }
 

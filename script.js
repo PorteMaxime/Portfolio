@@ -156,23 +156,23 @@ document.addEventListener('DOMContentLoaded', () => {
 const cards = document.querySelectorAll('.card');
 
 // Vérifier si les boutons ont déjà été générés
-if (document.getElementById('filter-buttons').children.length === 0) {
+// if (document.getElementById('filter-div').children.length === 0) {
    
-    const uniqueCategories = new Set();
-    cards.forEach(card => {
-        const categories = Array.from(card.querySelectorAll('.catégorie-carte')).map(el => el.textContent.trim());
-        categories.forEach(category => uniqueCategories.add(category));
-    });
+//     const uniqueCategories = new Set();
+//     cards.forEach(card => {
+//         const categories = Array.from(card.querySelectorAll('.catégorie-carte')).map(el => el.textContent.trim());
+//         categories.forEach(category => uniqueCategories.add(category));
+//     });
 
-    const filterButtonsContainer = document.getElementById('filter-buttons');
-    uniqueCategories.forEach(category => {
-        const button = document.createElement('button');
-        button.classList.add('filter-btn');
-        button.setAttribute('data-category', category);
-        button.textContent = category;
-        filterButtonsContainer.appendChild(button);
-    });
-}
+//     const filterButtonsContainer = document.getElementById('filter-div');
+//     uniqueCategories.forEach(category => {
+//         const button = document.createElement('button');
+//         button.classList.add('filter-btn');
+//         button.setAttribute('data-category', category);
+//         button.textContent = category;
+//         filterButtonsContainer.appendChild(button);
+//     });
+// }
 
 // Suivre les catégories sélectionnées
 let activeFilters = new Set();
@@ -191,9 +191,13 @@ document.querySelectorAll('.filter-btn').forEach(button => {
         button.classList.toggle('active');
 
         cards.forEach(card => {
-            const categories = Array.from(card.querySelectorAll('.catégorie-carte')).map(el => el.textContent.trim());
+            // console.log(Array.from(card.querySelectorAll('[data-category]')).map(el => el.textContent.trim()));
+            const categories = Array.from(card.querySelectorAll('[data-category]')).map(el => el.getAttribute('data-category').trim());
+            console.log(categories);
+            // const categories = Array.from(card.querySelectorAll('.catégorie-carte')).map(el => el.textContent.trim());
 
             const matchesAllFilters = Array.from(activeFilters).every(filter => categories.includes(filter));
+            console.log(matchesAllFilters);
 
             if (matchesAllFilters || activeFilters.size === 0) {
                 card.style.display = 'block';

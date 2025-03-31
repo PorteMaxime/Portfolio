@@ -124,20 +124,35 @@
           
           <br>
 
-          <p>Il est possible de les trier grâce aux filtres présents ci-dessous.</p>
- 
-          <br>
+          <div id="filter-div">
+            <p>Il est possible de les trier grâce aux filtres présents ci-dessous :</p>
+  
+            <br>
          
-          <div id="filter-buttons">
-            <button class="filter-btn" data-category="projet Formation">Projets en formation</button>
-            <button class="filter-btn" data-category="projet Travail">Projets au travail</button>
-            <button class="filter-btn" data-category="projet Personnel">Projets personnels</button>
-
-            <button class="filter-btn" data-category="projet Gitlab">Gitlab</button>
-            <button class="filter-btn" data-category="projet Symfony">Symfony</button>
-            <button class="filter-btn" data-category="projet Angular">Angular</button>
-            <button class="filter-btn" data-category="projet SQL">SQL</button>
-            <!-- <button class="filter-btn" data-category="appsUtil">(applications utilisées)</button> -->
+            <div class="filter-buttons">
+              <button class="filter-btn" data-category="projet Formation">Projets en formation</button>
+              <button class="filter-btn" data-category="projet Travail">Projets au travail</button>
+              <button class="filter-btn" data-category="projet Personnel">Projets personnels</button>
+              
+              <button class="filter-btn" data-category="projet Gitlab">Gitlab</button>
+              <button class="filter-btn" data-category="projet Symfony">Symfony</button>
+              <button class="filter-btn" data-category="projet Angular">Angular</button>
+            </div>
+            
+            <br>
+            
+            <p>Ou selon les compétences du tableau de l'épreuve portfolio :</p>
+            
+            <br>
+            
+            <div class="filter-buttons">
+              <button class="filter-btn" data-category="C1">Gérer le patrimoine informatique</button>
+              <button class="filter-btn" data-category="C2">Répondre aux incidents et aux demandes d’assistance et d’évolution</button>
+              <button class="filter-btn" data-category="C3">Développer la présence en ligne de l’organisation</button>
+              <button class="filter-btn" data-category="C4">Travailler en mode projet</button>
+              <button class="filter-btn" data-category="C5">Mettre à disposition des utilisateurs un service informatique</button>
+              <button class="filter-btn" data-category="C6">Organiser son développement professionnel</button>
+            </div>
           </div>
         </div>
 
@@ -182,10 +197,12 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Logeproj</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Formation</h2>
-                      <h2 class="catégorie-carte">projet Gitlab</h2>
-                      <h2 class="catégorie-carte">projet Angular</h2>
-                      <h2 class="catégorie-carte">projet SQL</h2>
+                      <h2 class="catégorie-carte" data-category="projet Formation">projet Formation</h2>
+                      <h2 class="catégorie-carte" data-category="projet Gitlab">projet Gitlab</h2>
+                      <h2 class="catégorie-carte" data-category="projet Angular">projet Angular</h2>
+                      <h2 data-category="C1"></h2>
+                      <h2 data-category="C2"></h2>
+                      <h2 data-category="C6"></h2>
                     </div>
                   </div>
                 </div>
@@ -198,38 +215,38 @@
                 <button class="close-btn button-style">&times;</button>
                 <h1 class="titre-section half-width">Logeproj</h1>
                 <h2 class="popup-small-title">contexte</h2>
-                <p></p>
+                <p>Pour avoir travaillé sur deux projets pour l'épreuve E5 du BTS SIO (SLAM), la personne intervenant pour les TP de spécialité nous présente Logeproj, une application avec API et un client web pour celle-ci. L'application en question est développée avec Angular. Plusieurs TP ont été réalisés dessus afin de mieux la maitriser.</p>
                 <h2 class="popup-small-title">Compétences abordées</h2>
                 <div class="popup-related-skills">
                   <div class="skill-card related-skill">
                     <p class="skill-name">Gérer le patrimoine informatique</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Travailler en mode projet</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Organiser son développement professionnel</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   </div>
                 </div>
                 <h2 class="popup-small-title">réalisation</h2>
@@ -245,7 +262,8 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Veille Technologique</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Formation</h2>
+                      <h2 class="catégorie-carte" data-category="projet Formation">projet Formation</h2>
+                      <h2 data-category="C6"></h2>
                     </div>
                   </div>
                 </div>
@@ -258,38 +276,38 @@
                 <button class="close-btn button-style">&times;</button>
                 <h1 class="titre-section half-width">Veille Technologique</h1>
                 <h2 class="popup-small-title">contexte</h2>
-                <p></p>
+                <p>Dans le cadre du BTS SIO, il est oblicgatoire de réaliser une veille technologique. J'ai décidé d'axer la mienne sur l'IA pour le développement, et plus précisemment les nouveaux outils crées afin de développer ainsi que les évolutions de ceux existants pour rendre le développement plus facile.</p>
                 <h2 class="popup-small-title">Compétences abordées</h2>
                 <div class="popup-related-skills">
                   <div class="skill-card related-skill">
                     <p class="skill-name">Gérer le patrimoine informatique</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Travailler en mode projet</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Organiser son développement professionnel</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   </div>
                 </div>
                 <h2 class="popup-small-title">réalisation</h2>
@@ -305,8 +323,9 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Portage de PHP</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Travail</h2>
-                      <h2 class="catégorie-carte">projet Gitlab</h2>
+                      <h2 class="catégorie-carte" data-category="projet Travail">projet Travail</h2>
+                      <h2 class="catégorie-carte" data-category="projet Gitlab">projet Gitlab</h2>
+                      <h2 data-category="C3"></h2>
                     </div>
                   </div>
                 </div>
@@ -319,40 +338,40 @@
               <button class="close-btn button-style">&times;</button>
               <h1 class="titre-section half-width">Portage de PHP</h1>
               <h2 class="popup-small-title">contexte</h2>
-              <p></p>
+              <p>En tant que première mission au SGAMI SUD-EST, il m'est demandé d'effectuer un portage de php de 7.4 vers 8.1 (correction de méthodes dépréciées et de bugs liés à la mise à jour de php) pour pouvoir maintenir un niveau de sécurité correcte. C'est donc l'ocasion pour moi de m'habituer au langage de programmation ainsi qu'au framework interne crée en 2001.</p>
               <h2 class="popup-small-title">Compétences abordées</h2>
               <div class="popup-related-skills">
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Travailler en mode projet</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                   <p class="line-skill"></p>
                   <p>AAAAAAAAAAAAAAAAAAAAAA</p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Organiser son développement professionnel</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
               </div>
               <h2 class="popup-small-title">réalisation</h2>
@@ -368,10 +387,12 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Stockware</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Travail</h2>
-                      <h2 class="catégorie-carte">projet Gitlab</h2>
-                      <h2 class="catégorie-carte">projet Symfony</h2>
-                      <h2 class="catégorie-carte">projet SQL</h2>
+                      <h2 class="catégorie-carte" data-category="projet Travail">projet Travail</h2>
+                      <h2 class="catégorie-carte" data-category="projet Gitlab">projet Gitlab</h2>
+                      <h2 class="catégorie-carte" data-category="projet Symfony">projet Symfony</h2>
+                      <h2 data-category="C1"></h2>
+                      <h2 data-category="C4"></h2>
+                      <h2 data-category="C6"></h2>
                     </div>
                   </div>
                 </div>
@@ -384,38 +405,38 @@
               <button class="close-btn button-style">&times;</button>
               <h1 class="titre-section half-width">Stockware</h1>
               <h2 class="popup-small-title">contexte</h2>
-              <p></p>
+              <p>Gestock est une application (gestion de stock) non maintenue et qui pose donc des problème de sécurité et de ressources. Plutôt que de la mettre à jour, il est possible de la redévelopper avec symfony (framework qui permet de développer des applications web).</p>
               <h2 class="popup-small-title">Compétences abordées</h2>
               <div class="popup-related-skills">
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Travailler en mode projet</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Organiser son développement professionnel</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
               </div>
               <h2 class="popup-small-title">réalisation</h2>
@@ -434,10 +455,13 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Agimmo</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Travail</h2>
-                      <h2 class="catégorie-carte">projet Gitlab</h2>
-                      <h2 class="catégorie-carte">projet Symfony</h2>
-                      <h2 class="catégorie-carte">projet SQL</h2>
+                      <h2 class="catégorie-carte" data-category="projet Travail">projet Travail</h2>
+                      <h2 class="catégorie-carte" data-category="projet Gitlab">projet Gitlab</h2>
+                      <h2 class="catégorie-carte" data-category="projet Symfony">projet Symfony</h2>
+                      <h2 data-category="C1"></h2>
+                      <h2 data-category="C2"></h2>
+                      <h2 data-category="C4"></h2>
+                      <h2 data-category="C6"></h2>
                     </div>
                   </div>
                 </div>
@@ -450,38 +474,38 @@
               <button class="close-btn button-style">&times;</button>
               <h1 class="titre-section half-width">Agimmo</h1>
               <h2 class="popup-small-title">contexte</h2>
-              <p></p>
+              <p>Agimmo est une application (gestion des infrastructures) déjà existante et déployée. Suite à des retours des utilisateurs, il est décidé de faire une évolution de l'application et donc de développer un nouveau module (Finance).</p>
               <h2 class="popup-small-title">Compétences abordées</h2>
               <div class="popup-related-skills">
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Travailler en mode projet</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Organiser son développement professionnel</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
               </div>
               <h2 class="popup-small-title">réalisation</h2>
@@ -500,7 +524,7 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Blender</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Personnel</h2>
+                      <h2 class="catégorie-carte" data-category="projet Personnel">projet Personnel</h2>
                     </div>
                   </div>
                 </div>
@@ -526,7 +550,7 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Unreal Engine</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Personnel</h2>
+                      <h2 class="catégorie-carte" data-category="projet Personnel">projet Personnel</h2>
                     </div>
                   </div>
                 </div>
@@ -553,8 +577,11 @@
                   <div class="card-info-text">
                     <h1 class="titre-carte">Création du portfolio</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Formation</h2>
-                      <h2 class="catégorie-carte">projet Personnel</h2>
+                      <h2 class="catégorie-carte" data-category="projet Formation">projet Formation</h2>
+                      <h2 class="catégorie-carte" data-category="projet Personnel">projet Personnel</h2>
+                      <h2 data-category="C1"></h2>
+                      <h2 data-category="C5"></h2>
+                      <h2 data-category="C6"></h2>
                     </div>
                   </div>
                 </div>
@@ -573,32 +600,32 @@
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Développer la présence en ligne de l’organisation</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Travailler en mode projet</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross card-image card-image" src="xmark-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Organiser son développement professionnel</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="check-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
               </div>
               <h2 class="popup-small-title">réalisation</h2>
@@ -621,12 +648,10 @@
         <div class="content-frame position-change-frame first-frame">
           <h1 class="titre-section">Ma formation actuelle (BTS SIO)</h1>
           <p class="text-justify lesser-width">
-            Ma formation, le BTS SIO(Brevet de Technicien Supérieur aux Services Informatiques aux Organisations) qui a donc une durée de 2 ans, forme aux métiers d'administrateur réseau ou de développeur, selon la spécialité choisie.
+            Ma formation, le BTS SIO qui a donc une durée de 2 ans, forme aux métiers d'administrateur réseau ou de développeur, selon la spécialité choisie.
           </p>
           <p class="text-justify lesser-width">
-            J'ai choisi la spécialité SLAM(Solutions Logicielles et Applications Métier).
-            <br>
-            L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
+            J'ai choisi la spécialité SLAM, destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs.
           </p>
           <p class="text-justify lesser-width">
             Ma formation a été effectuée au lycée Jacques Brel, à Vénissieux.
@@ -636,7 +661,7 @@
           <p class="text-justify lesser-width">
             Étant en alternance, j'ai la chance de travailler à mi-temps.
             <br>
-            Durant mon temps de travail, je fais partie de la DSIC du SGAMI SUD-EST, et plus précisemment du BIFN (la liste des acronymes ainsi qu'un organigrame se trouvent plus bas).
+            Durant mon temps de travail, je fais partie de la DSIC du SGAMI SUD-EST, et plus précisemment du BIFN.
           </p>
           <p class="text-justify lesser-width">
               Le BIFN est le "bureau" des développeurs web qui, entre autre, créent des applications web afin de soutenir les autres bureaux, mais aussi la police.
@@ -644,6 +669,9 @@
 
           <h1 class="titre-section">Liste des acronymes</h1>
           <p class="text-justify lesser-width">La liste des acronymes se trouve ci-dessous pour permettre une lecture plus agréable de la présentation de ma formation :</p>
+          <p class="lesser-width">BTS = Brevet de Technicien Supérieur</p>
+          <p class="lesser-width">SIO = Services Informatiques aux Organisations</p>
+          <p class="lesser-width">SLAM = Solutions Logicielles et Applications Métier</p>
           <p class="lesser-width">SGAMI = Secrétariat Général pour l'Administration du Ministère de l'Intérieur</p>
           <p class="lesser-width">DSIC = Direction des Systèmes d'Information et de Communication</p>
           <p class="lesser-width">BIFN = Bureau Innovation et Fabrique Numérique</p>
@@ -737,10 +765,3 @@
 
 </body>
 </html>
-
-<!--
-
-- modifier icône onglet
-- détourer correctement images des projet
-
--->
