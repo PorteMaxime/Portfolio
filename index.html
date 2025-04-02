@@ -160,18 +160,20 @@
         <!-- Cartes -->
         <div id="cards" class="less-width cards-margin">
 
-          <!-- Projets en formation --> <!--
+          <!-- Projets en formation -->
           <div class="card" data-id="popup-GLPI">
             <div class="card-content">
-              <img src="./Projets/icones projets/glpi.png" alt="Photo" class="card-image-wide">
+              <img src="./Projets/icones projets/glpi.png" alt="Photo" class="card-image">
               <div class="card-info-wrapper">
                 <div class="card-info">
                   <div class="card-info-text">
                     <h1 class="titre-carte">GLPI</h1>
                     <div class="card-categories">
-                      <h2 class="catégorie-carte">projet Formation</h2>
+                      <h2 class="catégorie-carte" data-category="projet Formation">projet Formation</h2>
+                      <h2 data-category="C1"></h2>
+                      <h2 data-category="C5"></h2>
                     </div>
-                  </div>    
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,15 +182,51 @@
           <div id="popup-GLPI" class="popup">
             <div class="popup-content">
                 <button class="close-btn button-style">&times;</button>
-                <h1 class="titre-section">GLPI</h1>
-                <p>Description de GLPI</p>
-                contexte
-                objectif
-                réalisation
+                <h1 class="titre-section half-width">GLPI</h1>
+                <h2 class="popup-small-title">contexte</h2>
+                <p>Au cours de la première année de formation du BTS SIO, lorsque nous travaillions sur des VM (machines virtuelles), un travaux pratique portait sur la mise en place de GLPI (Gestionnaire Libre de Parc Informatique).</p>
+                <h2 class="popup-small-title">Compétences abordées</h2>
+                <div class="popup-related-skills">
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Gérer le patrimoine informatique</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Développer la présence en ligne de l’organisation</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Travailler en mode projet</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
+                    <p class="line-skill"></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  </div>
+                  <div class="skill-card related-skill">
+                    <p class="skill-name">Organiser son développement professionnel</p>
+                    <p class="line-skill"></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                  </div>
+                </div>
+                <h2 class="popup-small-title">réalisation</h2>
+                Déployer un service
+                Recenser et identifier les ressources numériques
+                <p>GLPI est un logiciel libre de gestion des services informatiques (ex : ressencement des appareils connectés au réseau) et de gestion des services d'assistance (ex : gestion de tickets).</p>
+                <p>Pour ce TP, GLPI a été installé sur une VM (machine virtuelle)</p>
                 <img src="./Projets/glpi menu principal.avif" alt="Photo" class="popup-image">
             </div>
           </div>
--->
+          
           <div class="card" data-id="popup-Logeproj">
             <div class="card-content">
               <img src="./Projets/icones projets/logeproj.png" alt="Photo" class="card-image">
@@ -215,13 +253,13 @@
                 <button class="close-btn button-style">&times;</button>
                 <h1 class="titre-section half-width">Logeproj</h1>
                 <h2 class="popup-small-title">contexte</h2>
-                <p>Pour avoir travaillé sur deux projets pour l'épreuve E5 du BTS SIO (SLAM), la personne intervenant pour les TP de spécialité nous présente Logeproj, une application avec API et un client web pour celle-ci. L'application en question est développée avec Angular. Plusieurs TP ont été réalisés dessus afin de mieux la maitriser.</p>
+                <p>Pour pouvoir présenter deux projets à l'épreuve E5 du BTS SIO (SLAM), la personne intervenant pour les travaux pratiques de spécialité nous présente Logeproj, une application avec API et un client web pour celle-ci.</p>
                 <h2 class="popup-small-title">Compétences abordées</h2>
                 <div class="popup-related-skills">
                   <div class="skill-card related-skill">
                     <p class="skill-name">Gérer le patrimoine informatique</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
@@ -236,7 +274,7 @@
                   <div class="skill-card related-skill">
                     <p class="skill-name">Travailler en mode projet</p>
                     <p class="line-skill"></p>
-                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   </div>
                   <div class="skill-card related-skill">
                     <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
@@ -246,11 +284,15 @@
                   <div class="skill-card related-skill">
                     <p class="skill-name">Organiser son développement professionnel</p>
                     <p class="line-skill"></p>
-                    <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                    <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                   </div>
                 </div>
-                <h2 class="popup-small-title">réalisation</h2>
-                Chiffrement mots de passe jogeproj
+                <h2 class="popup-small-title">réalisations</h2>
+                <p>Logrproj est un logiciel open source développée avec Angular, sous forme de MVC (modèle, vue, controlleur). Plusieurs travaux pratiques ont été réalisés dessus afin de mieux le maitriser.</p>
+                <p>Le logiciel est dividé en deux projets, un serveur (avec une base de données et une API) et un client (avec une interface et qui utilise l'API pour afficher les données). Les travaux pratiques effectuent des changements sur les deux parties.</p>
+                <p>1 - Création de la vue pour un nouveau composant</p>
+                <p>2 - Chiffrement des mots de passe en base de donnée</p>
+                <p>3 - Stockage d'une nouvelle donnée et affichage sur l'interface</p>
             </div>
           </div>
 
@@ -276,7 +318,7 @@
                 <button class="close-btn button-style">&times;</button>
                 <h1 class="titre-section half-width">Veille Technologique</h1>
                 <h2 class="popup-small-title">contexte</h2>
-                <p>Dans le cadre du BTS SIO, il est oblicgatoire de réaliser une veille technologique. J'ai décidé d'axer la mienne sur l'IA pour le développement, et plus précisemment les nouveaux outils crées afin de développer ainsi que les évolutions de ceux existants pour rendre le développement plus facile.</p>
+                <p>Dans le cadre du BTS SIO, il est obligatoire de réaliser une veille technologique sur un sujet lié à la formation, et de la présenter lors de l'épreuve E4 (épreuve portfolio).</p>
                 <h2 class="popup-small-title">Compétences abordées</h2>
                 <div class="popup-related-skills">
                   <div class="skill-card related-skill">
@@ -311,6 +353,12 @@
                   </div>
                 </div>
                 <h2 class="popup-small-title">réalisation</h2>
+                <p>J'ai décidé d'axer ma veille technologique sur l'utilisation de l'IA pour le développement, plus précisemment sur l'apparition de nouveaux outils pouvant changer la méthode de développement ou assister les développeurs.</p>
+                <p>Comme sources, j'ai choisi :</p>
+                <p>- d'automatiser la collecte d'informations via les allertes de Google (Google alert)</p>
+                <p>- d'utiliser la plateforme youtube, où plusieurs personnes résument quotidiennement les différentes nouveautées et changement dans un millieu spécifique (les sources sont liées aux vidéos).</p>
+                <p>Ces deux solutions me permettent de m'informer correctement sur le sujet.</p>
+                <img src="./Projets/capture d'écran devin.png" alt="Photo" class="popup-image">
             </div>
           </div>
 
@@ -344,12 +392,12 @@
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
                   <p class="line-skill"></p>
-                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
+                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Développer la présence en ligne de l’organisation</p>
@@ -364,18 +412,30 @@
                 <div class="skill-card related-skill">
                   <p class="skill-name">Mettre à disposition des utilisateurs un service informatique</p>
                   <p class="line-skill"></p>
-                  <p>AAAAAAAAAAAAAAAAAAAAAA</p>
-                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
                   <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Organiser son développement professionnel</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
               </div>
               <h2 class="popup-small-title">réalisation</h2>
-              <img src="./Projets/Captures d'écran boulot/wiki portage php 8.1.PNG" alt="Photo" class="popup-image">
+              (explication montée de version)
+              
+              <br>
+              
+              <table>
+                <tr>
+                  <td>
+                    <p>Il m'a aussi été demandé de créer une documentation des changements sur l'intranet du département. Celle-ci servirait ainsi à mettre à jour plus rapidement les autres applications utilisant PHP 7.4.</p>
+                    <p>Ayant listé les changements réalisés à l'application tout au long de sa mise à jour, j'ai donc pu rédiger la documentation :</p>
+                  </td>
+                  <td>
+                    <img src="./Projets/Captures d'écran boulot/wiki portage php 8.1.PNG" alt="Photo" class="popup-image">
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
 
@@ -480,7 +540,7 @@
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
@@ -600,7 +660,7 @@
                 <div class="skill-card related-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
                   <p class="line-skill"></p>
-                  <p>OUI <img class="skill-check-cross" src="./Projets/check-solid.svg" alt=""></p>
+                  <p>NON <img class="skill-check-cross" src="./Projets/xmark-solid.svg" alt=""></p>
                 </div>
                 <div class="skill-card related-skill">
                   <p class="skill-name">Répondre aux incidents et aux demandes d’assistance et d’évolution</p>
