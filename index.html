@@ -41,7 +41,7 @@
     <button id="toggle-navbar" class="button-style">☰</button>
     <!-- Fin Navbar -->
 
-    
+
     <!-- Pages / Sections du site -->
     <div>
 
@@ -117,34 +117,34 @@
 
       <!-- Projets -->
       <div id="section-Projets" class="section section-Projets">
-        
+
         <div class="content-frame position-change-frame first-frame">
           <h1 class="titre-section">Mes projets</h1>
           <p>Les projets que j'ai réalisé jusqu'à maintenant en formation, en travaillant et mes projets personnels sont présents ici.</p>
-          
+
           <br>
 
           <div id="filter-div">
             <p>Il est possible de les trier grâce aux filtres présents ci-dessous :</p>
-  
+
             <br>
-         
+
             <div class="filter-buttons">
               <button class="filter-btn" data-category="projet Formation">Projets en formation</button>
               <button class="filter-btn" data-category="projet Travail">Projets au travail</button>
               <button class="filter-btn" data-category="projet Personnel">Projets personnels</button>
-              
+
               <button class="filter-btn" data-category="projet Gitlab">Gitlab</button>
               <button class="filter-btn" data-category="projet Symfony">Symfony</button>
               <button class="filter-btn" data-category="projet Angular">Angular</button>
             </div>
-            
+
             <br>
-            
+
             <p>Ou selon les compétences du tableau de l'épreuve portfolio :</p>
-            
+
             <br>
-            
+
             <div class="filter-buttons">
               <button class="filter-btn" data-category="C1">Gérer le patrimoine informatique</button>
               <button class="filter-btn" data-category="C2">Répondre aux incidents et aux demandes d’assistance et d’évolution</button>
@@ -225,13 +225,19 @@
 
               <h2 class="popup-small-title">réalisation</h2>
 
-              Déployer un service
-              Recenser et identifier les ressources numériques
-              <p class="text-justify">GLPI est un logiciel libre de gestion des services informatiques (ex : ressencement des appareils connectés au réseau) et de gestion des services d'assistance (ex : gestion de tickets). Pour ce TP, GLPI a été installé sur une VM (machine virtuelle)</p>
-              <img src="./Projets/GLPI/Glpi_screenshot.png" alt="Photo" class="popup-image">
+              <table>
+                <tr>
+                  <td>
+                    <p class="popup-table-text text-justify">GLPI est un logiciel libre de gestion des services informatiques (ex : ressencement des appareils connectés au réseau) et de gestion des services d'assistance (ex : gestion de tickets). Pour ce TP, GLPI a été installé sur une VM (machine virtuelle). Par la suite, le logiciel a été testé et documenté en simulant l'utilisation normale de l'application (ex : création de rôles pour la gestion de tickets, création, résolution et cloture de ticket, recencement des postes informatiques et assignement de certains des postes à des personnes et des salles...)</p>
+                  </td>
+                  <td>
+                    <img src="./Projets/GLPI/Glpi_screenshot.png" alt="Photo" class="popup-image">
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
-          
+
           <div class="card" data-id="popup-Logeproj">
             <div class="card-content">
               <img src="./Projets/Logeproj/logeproj.png" alt="Photo" class="card-image">
@@ -300,9 +306,50 @@
 
               <p>Logrproj est un logiciel open source développée avec Angular, sous forme de MVC (modèle, vue, controlleur). Plusieurs travaux pratiques ont été réalisés dessus afin de mieux le maitriser.</p>
               <p>Le logiciel est dividé en deux projets, un serveur (avec une base de données et une API) et un client (avec une interface et qui utilise l'API pour afficher les données). Les travaux pratiques effectuent des changements sur les deux parties.</p>
+
               <p>1 - Création de la vue pour un nouveau composant</p>
+
+              <table>
+                <tr>
+                  <td>
+                    <img src="./Projets/Logeproj/création table type base mae.png" alt="Photo" class="popup-image">
+                  </td>
+                  <td>
+                    <p class="popup-table-text text-justify">a</p>
+                  </td>
+                </tr>
+              </table>
+
+              <br class="popup-separation">
+
               <p>2 - Chiffrement des mots de passe en base de donnée</p>
+
+              <table>
+                <tr>
+                  <td>
+                    <p class="popup-table-text text-justify">Un autre travaux pratique avait pour sujet le chiffrement des mots de passe des utilisateurs. Pour ce faire, j'ai implémenté une texhnique de salage et poivrage. Le sel est une clé non chifrée dans la base de donnée, différente pour chaque utilisateur, qui permet donc d'obtenir un résultat différent pour deux mots de passe similaires. Le poivre est une clé présente dans le code qui permet de hacher le mot de passe de la même manière pour tous les utilisateurs, dans le cas où un hacker aurait accès à la base de données.</p>
+                  </td>
+                  <td>
+                    <img src="./Projets/Logeproj/ajout sel mot de passe.png" alt="Photo" class="popup-image">
+                  </td>
+                </tr>
+              </table>
+
+              <br class="popup-separation">
+
               <p>3 - Stockage d'une nouvelle donnée et affichage sur l'interface</p>
+
+              <table>
+                <tr>
+                  <td>
+                    <img src="./Projets/Logeproj/ajout colonne type base mae.png" alt="Photo" class="popup-image">
+                  </td>
+                  <td>
+                    <p class="popup-table-text text-justify">a</p>
+                  </td>
+                </tr>
+              </table>
+
             </div>
           </div>
 
@@ -366,9 +413,9 @@
                   <p class="yes-no-skill">OUI <img class="skill-check-or-cross" src="./Projets/check-solid.svg" alt=""></p>
                 </div>
               </div>
-              
+
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <p>J'ai décidé d'axer ma veille technologique sur l'utilisation de l'IA pour le développement, plus précisemment sur l'apparition de nouveaux outils pouvant changer la méthode de développement ou assister les développeurs.</p>
               <p>Comme sources, j'ai choisi :</p>
               <p>- d'automatiser la collecte d'informations via les allertes de Google (Google alert)</p>
@@ -397,7 +444,7 @@
               </div>
             </div>
           </div>
-          
+
           <div id="popup-PHP" class="popup">
             <div class="popup-content">
               <button class="close-btn button-style">&times;</button>
@@ -443,7 +490,7 @@
               </div>
 
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <table>
                 <tr>
                   <td>
@@ -456,7 +503,7 @@
               </table>
 
               <br class="popup-separation">
-              
+
               <table>
                 <tr>
                   <td>
@@ -491,7 +538,7 @@
               </div>
             </div>
           </div>
-          
+
           <div id="popup-Stockware" class="popup">
             <div class="popup-content">
               <button class="close-btn button-style">&times;</button>
@@ -550,7 +597,7 @@
               </table>
 
               <br class="popup-separation">
-              
+
               <table>
                 <tr>
                   <td>
@@ -563,7 +610,7 @@
               </table>
 
               <br class="popup-separation">
-              
+
               <p>Page de connexion à Stockware :</p>
               <img src="./Projets/Stockware/connexion stockware.PNG" alt="Photo" class="popup-image">
 
@@ -636,7 +683,7 @@
               </div>
 
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <table>
                 <tr>
                   <td>
@@ -688,11 +735,11 @@
               <h1 class="titre-section half-width">Blender</h1>
 
               <h2 class="popup-small-title">contexte</h2>
-              
+
               <p>blabla</p>
-              
+
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <p>blabla</p>
             </div>
           </div>
@@ -719,15 +766,15 @@
               <h1 class="titre-section half-width">Unreal Engine</h1>
 
               <h2 class="popup-small-title">contexte</h2>
-              
+
               <p>blabla</p>
-              
+
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <p>blabla</p>
             </div>
           </div>
-          
+
           <!-- Autres -->
           <div class="card" data-id="popup-Portfolio">
             <div class="card-content">
@@ -756,9 +803,9 @@
               <h2 class="popup-small-title">contexte</h2>
 
               <p>Une des épreuves du BTS SIO est l'épreuve E4 (épreuve "portfolio"). Le but de cette épreuve est de passer devant un jury en présentant le portfolio, et plus précisemment, les différents projets réalisés au court de la formation, aussi bien en formation que durant les stages, ou le temps de travail si l'étudiant est en alternance. C'est aussi l'occasion de créer un portfolio personnel servant d'appui pour le futur, par exemple lors de recherche d'emploi.</p>
-              
+
               <h2 class="popup-small-title">Compétences abordées</h2>
-              
+
               <div class="popup-related-skills">
                 <div class="skill-card unrelated-skill">
                   <p class="skill-name">Gérer le patrimoine informatique</p>
@@ -793,7 +840,7 @@
               </div>
 
               <h2 class="popup-small-title">réalisation</h2>
-              
+
               <table>
                 <tr>
                   <td>
@@ -806,7 +853,7 @@
               </table>
 
               <br class="popup-separation">
-              
+
               <table>
                 <tr>
                   <td>
@@ -817,13 +864,13 @@
                   </td>
                 </tr>
               </table>
-              
+
             </div>
           </div>
-          
+
         </div>
           <!-- Fin Cartes -->
-          
+
       </div>
       <!-- Fin Projets -->
 
@@ -862,7 +909,7 @@
           <p class="lesser-width">BIFN = Bureau Innovation et Fabrique Numérique</p>
           <!-- <p class="lesser-width"></p> -->
         </div>
-        
+
         <div class="content-frame position-change-frame">
           <h1 class="titre-section">Organigrame de la DSIC du SGAMI SUD-EST</h1>
           <div class="organigram-div">
@@ -916,9 +963,9 @@
               <a href="https://www.linkedin.com/in/tc-maxime-porte/">
                 <img class="contact-image" src="./Contact/linkedin.png" alt="Lien vers le profil LinkedIn">
               </a>
-  
+
               <br>
-  
+
               <div class="flex-row">
                 <img class="contact-image" src="./Contact/discord.png" alt="discord - tortue_veloce">
                 <p class="flex-row">tortue_veloce</p>
@@ -930,7 +977,7 @@
                 <img class="contact-image" src="./Contact/email.png" alt="mail link">
               </a>
             </div>
-            
+
             <h1 class="titre-section">Mon CV :</h1>
 
             <p>
