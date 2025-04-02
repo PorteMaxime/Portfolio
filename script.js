@@ -267,17 +267,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const images = [
-        "./icones fond/user-solid.svg",
-        "./icones fond/wand-sparkles-solid.svg",
-        "./icones fond/book-solid.svg",
-        "./icones fond/pen-solid.svg",
-        "./icones fond/folder-regular.svg",
-        "./icones fond/python-brands-solid.svg",
-        "./icones fond/stack-overflow-brands-solid.svg",
-        "./icones fond/file-solid.svg",
-        "./icones fond/magnifying-glass-solid.svg",
-        "./icones fond/briefcase-solid.svg",
-        "./icones fond/star-regular.svg",
+        "./Arrière plan/user-solid.svg",
+        "./Arrière plan/wand-sparkles-solid.svg",
+        "./Arrière plan/book-solid.svg",
+        "./Arrière plan/pen-solid.svg",
+        "./Arrière plan/folder-regular.svg",
+        "./Arrière plan/python-brands-solid.svg",
+        "./Arrière plan/stack-overflow-brands-solid.svg",
+        "./Arrière plan/file-solid.svg",
+        "./Arrière plan/magnifying-glass-solid.svg",
+        "./Arrière plan/briefcase-solid.svg",
+        "./Arrière plan/star-regular.svg",
     ];
 
     const container = document.getElementById("images-pattern");

@@ -655,6 +655,10 @@ body {
     translate: 50%;
 }
 
+.popup-separation {
+    margin-bottom: 50px;
+}
+
 .popup-content h1 {
     color: var(--base-text-color);
 }
@@ -673,6 +677,11 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--base-text-color);
+}
+
+.popup-table-text {
+    width: 95%;
+    margin-left: 2.5%;
 }
 
 .popup-related-skills {
@@ -734,7 +743,12 @@ body {
     height: 0.1rem;
     background-color: var(--base-text-color);
     /* margin: 10px auto 0 auto; */
-  }
+}
+
+.yes-no-skill {
+    width: 30%;
+    margin-left: 28%;
+}
 
 .close-btn {
     position: absolute;
