@@ -643,8 +643,8 @@ body {
     padding: 20px;
     text-align: center;
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     max-width: 90%;
     border: 0.1rem solid var(--base-text-color);
     overflow: scroll;
@@ -669,8 +669,9 @@ body {
 }
 
 .popup-image {
-    max-width: 600px;
+    max-width: 750px;
     max-height: 600px;
+    min-width: 400px;
 }
 
 .popup-small-title {
