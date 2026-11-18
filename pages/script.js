@@ -6,7 +6,7 @@ function InitPageChangeButtons() {
 
     $('[data-topage]').on('click', function () {
 
-        let pageName = $(this).attr('data-toPage');
+        let pageName = $(this).attr('data-topage');
         ShowPage(pageName);
 
     });
@@ -15,11 +15,7 @@ function InitPageChangeButtons() {
 
 function ShowPage(pageName) {
 
-    $('*[data-pagename]').each( function() {
-        
-        $(this).hide();
-
-    });
+    $('*[data-pagename]').hide();
     
     $('*[data-pagename="'+pageName+'"]').show();
 
@@ -28,16 +24,11 @@ function ShowPage(pageName) {
 // Changement de la langue
 function InitChangeLanguageButtons(newLanguage) {
 
-    $('[data-languageselector]').each( function () {;
-        
-        $(this).val(newLanguage);
+    $('[data-languageselector]').val(newLanguage);
 
-        $(this).on('change', function () {
-            
-            var valueSelected = this.value;
-            ChangeLanguage(valueSelected);
-            
-        });
+    $('[data-languageselector]').on('change', function () {
+
+        ChangeLanguage(this.value);
 
     });
 
@@ -45,21 +36,16 @@ function InitChangeLanguageButtons(newLanguage) {
 
 function ChangeLanguage(newLanguage) {
 
-    $('[data-language]').each( function() {
-        
-        if ($(this).data('language') == newLanguage) {
-            $(this).show();
-        }
-        else {
-            $(this).hide();
-        }
+    $('[data-language]').each( function () {
+
+        $(this).toggle($(this).data('language') == newLanguage);
 
     });
 
 }
 
 // Au chargement de la page
-$(document).ready(function(){
+$(document).ready( function () {
 
     InitPageChangeButtons();
     InitChangeLanguageButtons(baseLanguage);
