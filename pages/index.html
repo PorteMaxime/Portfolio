@@ -5,34 +5,44 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio Maxime Porte</title>
-    	
+
+    	<link rel="stylesheet" href="colorThemes.css">
 		<link rel="stylesheet" href="style.css">
 		
 		<script src="jquery-4.0.0.min.js"></script>
 		<script src="script.js" defer></script>
 		
 	</head>
-	<body>
+	<body class="light-theme">
 		<div id="TopMenu">
-			<div id="TopMenuPages">
-				<button data-topage="page1" data-language="en">About me</button>
-				<button data-topage="page1" data-language="fr">À propos</button>
+			<div id="TopMenuLeft">
+				<div id="TopMenuPages">
+					<button data-topage="page1" data-language="en">About me</button>
+					<button data-topage="page1" data-language="fr">À propos</button>
 
-				<button data-topage="page2" data-language="en">My projects</button>
-				<button data-topage="page2" data-language="fr">Mes projets</button>
+					<button data-topage="page2" data-language="en">My projects</button>
+					<button data-topage="page2" data-language="fr">Mes projets</button>
 
-				<button data-topage="page3" data-language="en">Contact me</button>
-				<button data-topage="page3" data-language="fr">Me contacter</button>
-			</div>
-			<div id="TopMenuLanguage">
-				<div>
-					<p data-language="en">Language :</p>
-					<p data-language="fr">Langue :</p>
+					<button data-topage="page3" data-language="en">Contact me</button>
+					<button data-topage="page3" data-language="fr">Me contacter</button>
 				</div>
-				<select data-languageselector>
-					<option value="en">English</option>
-					<option value="fr">Français</option>
-				</select>
+			</div>
+
+			<div id="TopMenuRight">
+				<div id="TopMenuLanguage">
+					<div>
+						<p data-language="en">Language :</p>
+						<p data-language="fr">Langue :</p>
+					</div>
+					<select data-languageselector>
+						<option value="en">English</option>
+						<option value="fr">Français</option>
+					</select>
+				</div>
+
+				<button id="ThemeButton" aria-label="Switch theme">
+					<img src="../res/ico/moon-regular-full.svg" alt="">
+				</button>
 			</div>
 		</div>
 
@@ -85,7 +95,13 @@
 			</div>
 	
 			<div data-pagename="page2">
-				Content of div 2
+				
+				<h1 data-language="en">My projects</h1>
+				<h1 data-language="fr">Mes projets</h1>
+
+
+
+				
 			</div>
 	
 			<div data-pagename="page3">

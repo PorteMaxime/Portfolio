@@ -3,12 +3,7 @@
     font-family: Verdana, Arial, sans-serif;
 }
 
-body {
-    margin: 0;
-    background-color: coral;
-}
-
-/* Fixed top menu */
+/* TOP MENU */
 #TopMenu {
     position: fixed;
     top: 0;
@@ -22,22 +17,30 @@ body {
     align-items: center;
 
     padding: 0 25px;
-    background-color: #222;
-    color: white;
 
     z-index: 1000;
 }
 
-/* All top menu buttons and selector */
-#TopMenu button,
-#TopMenu select {
+#TopMenuLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#TopMenuRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#TopMenu button, #TopMenu select {
     min-width: 130px;
     min-height: 42px;
 
     padding: 10px 20px;
 
     background-color: transparent;
-    color: white;
+    color: var(--text-color);
 
     border: 1px solid #777;
     border-radius: 6px;
@@ -50,39 +53,56 @@ body {
     transition: background-color 0.2s, border-color 0.2s;
 }
 
-/* Hover effect */
-#TopMenu button:hover,
-#TopMenu select:hover {
-    background-color: #444;
-    border-color: white;
+#TopMenu button:hover, #TopMenu select:hover {
+    background-color: var(--hover-color);
+    border-color: var(--text-color);
 }
 
-/* Active button */
 #TopMenu button:active {
     background-color: #555;
 }
 
-/* Dropdown options */
-#TopMenu select option {
-    background-color: #222;
-    color: white;
-}
-
-/* Navigation buttons - left */
-#TopMenuPages {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-/* Language selector - right */
 #TopMenuLanguage {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Scrollable content */
+#TopMenuLanguage p {
+    margin: 0;
+}
+
+#TopMenu select option {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+#TopMenu #ThemeButton {
+    min-width: 42px;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+}
+
+#ThemeButton {
+    min-width: 42px;
+    width: 42px;
+    min-height: 42px;
+    height: 42px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ThemeButton img {
+    width: 24px;
+    height: 24px;
+    filter: var(--icon-filter);
+}
+
+/* CONTENT */
 #Content {
     position: absolute;
     top: 80px;
@@ -94,7 +114,6 @@ body {
     padding: 20px;
 }
 
-/* Hide all pages by default */
 #Content [data-pagename] {
     display: none;
 }

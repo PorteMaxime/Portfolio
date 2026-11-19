@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+    --light-background: #f5f5f5;
+    --light-topmenu: #ffffff;
+    --light-text: #222222;
+    --light-hover: #e0e0e0;
+    --light-icon-filter: invert(10%);
+
+    --dark-background: #181818;
+    --dark-topmenu: #101010;
+    --dark-text: #ffffff;
+    --dark-hover: #333333;
+    --dark-icon-filter: invert(1);
+}
+
+body.light-theme {
+    --background-color: var(--light-background);
+    --topmenu-color: var(--light-topmenu);
+    --text-color: var(--light-text);
+    --hover-color: var(--light-hover);
+    --icon-filter: var(--light-icon-filter);
+}
+
+body.dark-theme {
+    --background-color: var(--dark-background);
+    --topmenu-color: var(--dark-topmenu);
+    --text-color: var(--dark-text);
+    --hover-color: var(--dark-hover);
+    --icon-filter: var(--dark-icon-filter);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#Content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#TopMenu {
+    background-color: var(--topmenu-color);
+    color: var(--text-color);
+}
